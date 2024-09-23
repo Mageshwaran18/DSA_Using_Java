@@ -25,6 +25,7 @@ public class Count_Digits {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         count_digits(n);
+        sc.close();
     }
     
 }

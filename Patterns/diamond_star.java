@@ -1,3 +1,5 @@
+package Patterns;
+
 public class diamond_star {
     
     public static void diamond_star()

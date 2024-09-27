@@ -1,0 +1,44 @@
+-------------------------- DSA using Java ------------------------
+
+1. append()
+   Syntax: sb.append(String str);
+   Description: Appends the specified string or value to the current StringBuilder object.
+
+2. insert()
+   Syntax: sb.insert(int offset, String str);
+   Description: Inserts the specified string at the given position (offset) in the StringBuilder.
+
+3. reverse()
+   Syntax: sb.reverse();
+   Description: Reverses the sequence of characters in the StringBuilder.
+
+4. delete()
+   Syntax: sb.delete(int start, int end);
+   Description: Deletes characters from the StringBuilder starting from start to end - 1.
+
+5. replace()
+   Syntax: sb.replace(int start, int end, String str);
+   Description: Replaces characters in the StringBuilder between start and end - 1 with the provided string.
+
+6. setLength()
+   Syntax: sb.setLength(int newLength);
+   Description: Sets the length of the StringBuilder. If the new length is smaller, it truncates the string; if larger, it adds null characters.
+
+7. charAt()
+   Syntax: sb.charAt(int index);
+   Description: Returns the character at the specified index.
+
+8. length()
+   Syntax: sb.length();
+   Description: Returns the current length of the string in the StringBuilder.
+
+9. substring()
+   Syntax: sb.substring(int start, int end);
+   Description: Extracts a portion of the string from start to end - 1.
+
+
+10 toString()
+   StringBuilder sb = new StringBuilder();
+   sb.append("Hello");
+   System.out.println(sb.toString())
+   StringBuilder itself is not a String, so when you want to work with the finalstring result (e.g., printing it or passing it to methods that accept strings), you need to convert it to a String using toString().

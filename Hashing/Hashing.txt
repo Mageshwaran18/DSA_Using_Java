@@ -1,0 +1,5 @@
+-------------Hashing--------------
+boolean areEqual = hashmap1.equals(hashmap2);
+
+// The equals() method checks if both hashmaps have the same size and key-value pairs.
+// It returns true if they are equal, false otherwise.

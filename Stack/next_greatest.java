@@ -1,7 +1,7 @@
 package Stack;
 import java.util.*;
 
-/* LeetcCode No  :- 496 */
+/* LeetcCode No  :- 496 *  (Refer the DSA Notes) /
 
 /* for next greatest element --> for(int i = n -1 ; i > 0 ; i--)
  * for previous greatest element --> for(int i = 0 ; i < n ; i++)

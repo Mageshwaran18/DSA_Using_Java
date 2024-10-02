@@ -42,3 +42,10 @@
    sb.append("Hello");
    System.out.println(sb.toString())
    StringBuilder itself is not a String, so when you want to work with the finalstring result (e.g., printing it or passing it to methods that accept strings), you need to convert it to a String using toString().
+
+
+Queue :-
+
+Queue <Integer> q1 = new Queue<Integer>(); is that Queue is an interface in Java, not a concrete class. You cannot directly instantiate an interface using the new keyword.
+
+To fix this, you need to use a concrete implementation of the Queue interface, such as LinkedList or ArrayDeque. 

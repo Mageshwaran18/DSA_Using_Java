@@ -1,0 +1,18 @@
+Declaration: Queue<E> queue = new LinkedList<>();
+
+Adding Element:
+
+queue.add(element) // Throws IllegalStateException if the queue is full
+queue.offer(element) // Returns false if the queue is full
+
+Accessing Element:
+
+queue.element() // Throws NoSuchElementException if the queue is empty
+queue.peek() // Returns null if the queue is empty
+
+Removing Element:
+
+queue.remove() // Throws NoSuchElementException if the queue is empty
+queue.poll() // Returns null if the queue is empty
+
+Check if Empty: queue.isEmpty()

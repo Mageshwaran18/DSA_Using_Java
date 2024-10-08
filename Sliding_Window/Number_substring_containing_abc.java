@@ -6,6 +6,14 @@ public class Number_substring_containing_abc {
 
 /*Leetcode no :- 1358 */
 
+/*
+ * Brute Force with Sliding window & Hashing --> If a substring contains all the abc atleast once then the following subsets of the substring will also contains the abc , then we don't explictly check them 
+ *                                           --> In window if abc is found then in the string abcabc , the following substrings of the abc will also have the abc , ex: abc , abca , abcab , abcabc 
+ *                                           --> This can be found using the 1 ( current substring ) + [s.length()(end index) - i (the start index) -1] ( The number of remaining elements in the string)
+ *                                           --> Use hashtable t define whether the window contains atleast single a , b , c 
+ *                                           --> Refer the code it's very easy to understand
+ */
+
     public static void main(String[] args) {
 
         String str = "abcabc";

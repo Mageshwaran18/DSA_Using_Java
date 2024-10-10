@@ -7,7 +7,6 @@ import java.util.Queue;
  * See the recursion function you can understand easily 
  * (1) Assign the leftchild to the rightchild 
  * (2) Assign the rightchild to the leftchild
- * 
  */
 
 public class mirror {

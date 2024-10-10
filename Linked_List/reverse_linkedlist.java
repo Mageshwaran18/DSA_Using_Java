@@ -1,9 +1,7 @@
 package Linked_List;
 
+public class reverse_linkedlist {
 
-
-
-public class median {
     class Node 
     {
         int data ; 
@@ -36,22 +34,9 @@ public class median {
         }
     }
 
-    public static void median(median list)
-    {
-        Node fast = list.head;
-        Node slow = list.head;
-        while(fast.next!=null && fast.next.next!=null)
-        {
-            fast = fast.next.next;
-            slow = slow.next;
-        }
-        System.out.println(slow.data);
-
-    }
-    public void display(String s , median list)
+    public void display(reverse_linkedlist list)
     {
         Node temp = head;
-        System.out.print(s);
         while(temp!=null)
         {
             System.out.print(temp.data + " -> ");
@@ -60,7 +45,7 @@ public class median {
         System.out.println("null");
     }
     
-    public void reverse(median list)
+    public void reverse(reverse_linkedlist list)
     {
         Node cur = list.head;
         Node nextt = list.head;
@@ -78,22 +63,19 @@ public class median {
 
     }
 
-    public static void main(String[] args) {
-        
-        median cp = new median();
-        cp.append(11);
-        cp.append(12);
-        cp.append(13);
-        cp.append(14);
-        // cp.append(14);
-        cp.append(13);
-        cp.append(12);
-        cp.append(11);
-        cp.display("Given Linked list :- ", cp);
-        cp.median(cp);
-        
 
 
-
+    public static void main(String[] args)
+    {
+        reverse_linkedlist rl = new reverse_linkedlist();
+        rl.append(1);
+        rl.append(2);
+        rl.append(3);
+        rl.append(4);
+        rl.append(5);
+        // rl.display(rl);
+        rl.reverse(rl);
+        rl.display(rl);
     }
+    
 }

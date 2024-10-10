@@ -1,3 +1,10 @@
+/**
+ * Implements a binary search tree (BST) with recursive insertion.
+ * The `bst_insert_recursion` class provides a `Node` class to represent a node in the BST,
+ * and a `Tree` class to manage the overall BST structure, including the root node.
+ * The `insert` method recursively inserts a new node with the given data value into the BST.
+ * The `display` method performs an in-order traversal of the BST and prints the node values.
+ */
 package Tree;
 
 public class bst_insert_recursion {
@@ -31,7 +38,7 @@ public class bst_insert_recursion {
             if(root==null)
             {
                 root = new Node(data);
-                return root;
+                return root;    /* Even if the root value is changed , during the back tracking it will be corrected by itself */
             }
             if(root.data > data)
             {

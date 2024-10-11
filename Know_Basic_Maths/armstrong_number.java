@@ -2,18 +2,18 @@ package Know_Basic_Maths;
 
 import java.util.Scanner;
 
+/*An Amrstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits. */
+
 public class armstrong_number {
 
 
     public static void armstrong_number(int num)
     {
         int res = 0 ; 
-        int n = num  , rem , count = 0 ; 
-        while(n!=0)
-        {
-            n = n/10;
-            count+=1;
-        }
+        int n = num  , rem ; 
+        // Calculate the number of
+        // digits in the given number
+        int count  = String.valueOf(num).length();
         n = num;
         while(n!=0)
         {

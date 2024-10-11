@@ -23,7 +23,7 @@ import java.util.HashMap;
  *                    --> (4) The result of the window for every iteration is the required output
  * 
  * Better Approach ( optimal ) --> In my apprach  I were moving the left till the window contains only distinct values , but in better apprach we can move the left exactly to position which makes the window valid
- *                             --> While updating the hashmap if the element is found [ hm.put(c, hm.get(c) + 1) ] with +1 , we can directly update the with the index 
+ *                             --> While updating the left if the element is found [ hm.put(c, hm.get(c) + 1) ] with +1 , we can directly update the with the index 
  *                             --> Lets say string adcabb , the left starts from o and right starts from 0 
  *                             --> I will update hashmap for every character with their index being found in the string.
  *                             --> So if l = 0 and r = 2 , the hash map will ['a' : 0 , 'd' : 1 , 'c' : 2 ] 

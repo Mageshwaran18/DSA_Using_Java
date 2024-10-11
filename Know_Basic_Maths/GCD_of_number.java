@@ -3,6 +3,9 @@ package Know_Basic_Maths;
 import java.util.*;
 
 
+/*Repeatedly subtract the smaller number from the larger number until one of them becomes 0.
+Once one of them becomes 0, the other number is the GCD of the original numbers. */
+
 public class GCD_of_number {
 
     public static int gcd(int a , int b)

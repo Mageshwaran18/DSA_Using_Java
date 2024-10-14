@@ -3,3 +3,13 @@ boolean areEqual = hashmap1.equals(hashmap2);
 
 // The equals() method checks if both hashmaps have the same size and key-value pairs.
 // It returns true if they are equal, false otherwise.
+
+-------------------------------------------------
+Hashing is nothing but the combination of the steps: pre-storing and fetching.
+
+We may encounter a problem where the maximum array element may be very large like 10^9. In that case, theoretically, we should declare an array of size 10^9+1. But we cannot do so. The maximum size of an array can be:
+
+Array Declaration    | Maximum size (Integer type) | Maximum size (Boolean type)
+---------------------|-----------------------------|--------------------------
+Inside main function | 10^5                        | 10^7
+Globally             | 10^7                        | 10^8

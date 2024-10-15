@@ -11,5 +11,5 @@ We may encounter a problem where the maximum array element may be very large lik
 
 Array Declaration    | Maximum size (Integer type) | Maximum size (Boolean type)
 ---------------------|-----------------------------|--------------------------
-Inside main function | 10^5                        | 10^7
+Inside main function | 10^6                        | 10^7
 Globally             | 10^7                        | 10^8

@@ -1,10 +1,15 @@
 package Sorting;
 
+/*
+* Merge Sort is a divide and conquers algorithm, it divides the given array into equal parts and then merges the 2 sorted parts. 
+ * Time Complexity --> O(n logn)
+ */
+
 public class merge_sort {
     
     public  void merge(int arr[], int l , int mid , int r)
     {
-        int n1 = mid - l +1;
+        int n1 = mid - l +1; /*mid element is included  */
         int n2 = r - mid;
 
         int L[] = new int[n1];
@@ -12,11 +17,11 @@ public class merge_sort {
 
         for(int i = 0 ; i < n1 ; i++)
         {
-            L[i]=arr[l+i];
+            L[i]=arr[l+i]; /*as it should start from the lowest ( mid is included ) */
         }
         for(int j = 0; j < n2 ; j++)
         {
-            R[j]=arr[mid+1+j];
+            R[j]=arr[mid+1+j];/*as it should start after the mid (mid is excluded )so we included + 1 */
         }
 
         int i= 0 , j = 0, k = l ;

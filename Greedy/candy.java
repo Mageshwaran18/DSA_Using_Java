@@ -1,6 +1,8 @@
 public class candy {
     
     public static int candyDistribution(int[] ratings) {
+        
+        /*
         int n = ratings.length;
         int[] leftToRight = new int[n];
         int[] rightToLeft = new int[n];
@@ -30,6 +32,22 @@ public class candy {
         }
         
         return totalCandies;
+        */
+
+       int summ = 1 , i = 1;
+       int n = ratings.length;
+       while(i < n)
+       {
+          if(ratings[i]==ratings[i-1])
+          {
+            summ+=1;
+            i++;
+            continue;
+          }
+
+          int peak = 1;
+          
+       }
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,5 @@
-package Array;
+package Array.Easy;
+
 
 
 /* Refer the DSA Notes */

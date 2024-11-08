@@ -1,4 +1,5 @@
-package Array;
+package Array.Easy;
+
 import java.util.*;
 
 /* Brute Force approach --> Store the elements in the hashset which doesn't allow duplicates

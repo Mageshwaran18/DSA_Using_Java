@@ -1,4 +1,5 @@
-package Array;
+package Array.Easy;
+
 
 public class single_number {
       /*

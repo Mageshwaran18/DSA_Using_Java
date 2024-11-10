@@ -1,6 +1,14 @@
 package Array.Medium;
 import java.util.*;
 
+/* LeetCode:- 560 https://leetcode.com/problems/subarray-sum-equals-k/description/ */
+
+/* Refer the notes */
+/* 
+ * TimeComplexity :- O(n) 
+ * SpaceComplexity :- O(n)
+ */
+
 public class count_of_subarray_equals_k {
 
     public int count_of_subarray_equals_k(int []arr,int k)
@@ -35,8 +43,8 @@ public class count_of_subarray_equals_k {
     
     public static void main(String[] args) {
         count_of_subarray_equals_k solution = new count_of_subarray_equals_k();
-        int[] arr = {1, 1, 1};
-        int k = 2;
+        int[] arr = {1,2,3,-3,1,1,4,2,-3};
+        int k = 3;
         int result = solution.count_of_subarray_equals_k(arr, k);
         System.out.println("Number of subarrays with sum " + k + ": " + result);
     }

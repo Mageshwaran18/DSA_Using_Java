@@ -4,6 +4,8 @@ import java.util.*;
 
 /* LeetCode :-3349 https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/ */
 
+/* Refer the DSA Notes */
+
 public class adjacent_increasing_subarrays_detection {
     public boolean check(List<Integer>nums, int start , int k)
     {

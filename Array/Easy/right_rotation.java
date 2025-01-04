@@ -1,4 +1,5 @@
-package Array;
+package Array.Easy;
+
 
 /* LeetCode : 189 https://leetcode.com/problems/rotate-array/ */
 

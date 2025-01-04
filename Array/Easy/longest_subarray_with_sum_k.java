@@ -1,4 +1,5 @@
-package Array;
+package Array.Easy;
+
 
 /* GfG :- https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1  */
 

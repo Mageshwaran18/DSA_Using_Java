@@ -1,4 +1,5 @@
-package Array;
+package Array.Easy;
+
 
 /* LeetCode :-  283  https://leetcode.com/problems/move-zeroes/description/ */
 

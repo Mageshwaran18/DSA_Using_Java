@@ -1,8 +1,6 @@
 package Array.Medium;
 import java.util.*;
 
-<<<<<<< HEAD
-=======
 /* LeetCode:- 560 https://leetcode.com/problems/subarray-sum-equals-k/description/ */
 
 /* Refer the notes */
@@ -11,26 +9,10 @@ import java.util.*;
  * SpaceComplexity :- O(n)
  */
 
->>>>>>> 0e4cca2187d66a984bbf1559ddcb63e5780b763f
 public class count_of_subarray_equals_k {
 
     public int count_of_subarray_equals_k(int []arr,int k)
     {
-<<<<<<< HEAD
-        int count = 0;
-        Map<Integer,Integer> hm = new HashMap<>();
-        int sum =0;
-        int n = arr.length;
-        for(int i = 0 ; i < n;i++ )
-        {
-            sum+=arr[i];
-            if
-        }
-        return count;
-
-    }
-    
-=======
         int count = 0 ; 
         int sum = 0 ; 
         int n = arr.length;
@@ -66,5 +48,4 @@ public class count_of_subarray_equals_k {
         int result = solution.count_of_subarray_equals_k(arr, k);
         System.out.println("Number of subarrays with sum " + k + ": " + result);
     }
->>>>>>> 0e4cca2187d66a984bbf1559ddcb63e5780b763f
 }

@@ -1,13 +1,12 @@
 package Two_Pointers;
+import java.util.Arrays;
 
-import   Sorting.merge_sort;
 
 public class two_sum {
 
     public static int[] two_sum(int arr[],int size ,int target)
     {
-        merge_sort ms = new merge_sort();
-        ms.merge_sort(arr, size, target);
+        Arrays.sort(arr);
         int i = 0 ;
         int j = size-1;
         while(i<j)
@@ -36,10 +35,12 @@ public class two_sum {
         int arr[] = {10,15,2,90,85};
         int  n = arr.length;
         int target = 100;
-        two_sum(arr, n ,target);
+        int []ans = two_sum(arr, n ,target);
+        for(int i : ans)
+        {
+            System.out.print(i +" ");
+        }
         
-
-
     }
     
 }

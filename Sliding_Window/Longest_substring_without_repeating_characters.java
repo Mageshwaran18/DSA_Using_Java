@@ -24,6 +24,8 @@ import java.util.HashMap;
  * 
  * Better Approach ( optimal ) --> In my apprach  I were moving the left till the window contains only distinct values , but in better apprach we can move the left exactly to position which makes the window valid
  *                             --> While updating the left if the element is found [ hm.put(c, hm.get(c) + 1) ] with +1 , we can directly update the with the index 
+ *                             --> Instead of storing the hash value of character with the 0 , we can save it's index where it's occured.
+ *                             --> So If you found the duplicate , we can move the left once step ahaead of the posisition where it lastly occured 
  *                             --> Lets say string adcabb , the left starts from o and right starts from 0 
  *                             --> I will update hashmap for every character with their index being found in the string.
  *                             --> So if l = 0 and r = 2 , the hash map will ['a' : 0 , 'd' : 1 , 'c' : 2 ] 
@@ -41,7 +43,7 @@ import java.util.HashMap;
  */
 
 
-public class Longest_substring_without_repeating_characters {
+public class longest_substring_without_repeating_characters {
 
 /* --------------------------- My approach -------------------------
     public int lengthOfLongestSubstring(String s) {

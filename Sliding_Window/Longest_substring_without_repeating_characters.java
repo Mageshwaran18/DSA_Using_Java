@@ -112,8 +112,6 @@ public class longest_substring_without_repeating_characters {
     }
     
     public static void main(String[] args) {
-        Longest_substring_without_repeating_characters solution = new Longest_substring_without_repeating_characters();
-        
         // Test cases
         String[] testCases = {"abcabcbb", "bbbbb", "pwwkew", "", "dvdf"};
         

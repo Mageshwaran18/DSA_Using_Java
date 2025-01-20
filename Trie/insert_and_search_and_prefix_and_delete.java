@@ -6,7 +6,7 @@ package Trie;
  * 
 */
 
-public class insert_and_search_and_prefix {
+public class insert_and_search_and_prefix_and_delete {
 
     class Trie {
         Trie child[] = new Trie[26];
@@ -51,10 +51,21 @@ public class insert_and_search_and_prefix {
             }   
             return true;
         }
+
+        public void delete(String str) {
+            Trie cur = this;
+            for(char c : str.toCharArray()) {
+                if(cur.child[c-'a'] == null) {
+                    return; // String not found
+                }
+                cur = cur.child[c-'a'];
+            }
+            cur.eow = false; // Mark as not end of word
+        }
     }
 
     public static void main(String args[]) {
-        Trie root = new insert_and_search_and_prefix().new Trie();
+        Trie root = new insert_and_search_and_prefix_and_delete().new Trie();
         String str = "apple";
         root.insert(str);
         System.out.println("Inserted string : " + str);

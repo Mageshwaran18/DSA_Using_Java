@@ -58,3 +58,19 @@
 18.1.25
 19.1.25
 20.1.25
+'''
+When a method is non-static:
+
+Each object gets its own copy of instance methods and variables
+Methods can use 'this' keyword to refer to the current object
+Methods can access both instance and static members
+Different objects maintain their own state independently
+When a method is static:
+
+It belongs to the class itself, not to any specific object
+Can't use 'this' keyword because there's no instance context
+Can only directly access other static members
+Shared across all instances of the class
+Can be called without creating an object 
+
+'''

@@ -49,5 +49,8 @@ public class Priority_Queue {
         // Clear the queue
         numbers.clear();
         System.out.println("Is queue empty? " + numbers.isEmpty());
-    }
+
+        // (a,b) -> b-a creates a comparator that sorts in descending order
+        // by comparing elements b and a. If b-a is positive, b is placed before a
+        PriorityQueue <Integer> pq = new PriorityQueue<>((a,b)->b-a);    }
 }

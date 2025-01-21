@@ -1,0 +1,33 @@
+/**
+ * Priority Queue in Java
+ * 
+ * A Priority Queue is a special type of queue where elements are processed based on their priority.
+ * Java provides PriorityQueue class in java.util package.
+ * 
+ * Types:
+ * 1. Min Priority Queue (default) - smallest element has highest priority
+ * 2. Max Priority Queue - largest element has highest priority
+ * 
+ * Basic Syntax:
+ * PriorityQueue<Type> pq = new PriorityQueue<>(); // Min PQ
+ * PriorityQueue<Type> pq = new PriorityQueue<>(Collections.reverseOrder()); // Max PQ
+ * 
+ * Main Methods:
+ * - add(E element) / offer(E element): Inserts element
+ * - peek(): Returns head element without removing it
+ * - poll(): Removes and returns head element
+ * - remove(Object o): Removes specific element
+ * - size(): Returns number of elements
+ * - clear(): Removes all elements
+ * - isEmpty(): Checks if queue is empty
+ * 
+ * Time Complexity:
+ * - Insertion: O(log n)
+ * - Deletion: O(log n)
+ * - Peek: O(1)
+ * 
+ * Internal Implementation:
+ * - Uses Binary Heap data structure
+ * - Default initial capacity is 11
+ * - Grows dynamically as elements are added
+ */

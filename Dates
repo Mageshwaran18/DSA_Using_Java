@@ -100,4 +100,47 @@ Check if Empty: queue.isEmpty()
 
 22.1.25
 
+You need to implement comaparator when ever you use a customized priority queue 
+
+PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> {
+             if (a[0] == b[0])
+                 return a[1] - b[1];
+             return a[0] - b[0];
+         });
+
+PriorityQueue <Map.Entry<Integer,Integer>> pq = new PriorityQueue<>((a,b)-> a.getKey()-b.getKey())
+
+* TreeMap - A Red-Black tree based NavigableMap implementation
+* Maintains keys in sorted order
+* Time complexity: O(log n) for most operations
+
+Declaration: TreeMap<K,V> map = new TreeMap<>();
+
+Basic Operations:
+map.put(key, value)      // Add or update entry
+map.get(key)             // Get value for key
+map.remove(key)          // Remove entry
+map.containsKey(key)     // Check if key exists
+map.containsValue(value) // Check if value exists
+
+Navigation Methods:
+map.firstKey()           // Get smallest key
+map.lastKey()            // Get largest key
+map.higherKey(key)       // Next higher key
+map.lowerKey(key)        // Next lower key
+map.ceilingKey(key)      // Key >= given key
+map.floorKey(key)        // Key <= given key
+
+Views:
+map.keySet()             // Set of all keys
+map.values()             // Collection of all values
+map.entrySet()           // Set of all entries
+
+Size Operations:
+map.size()               // Number of entries
+map.isEmpty()            // Check if empty
+map.clear()              // Remove all entries
+
+
+23.1.25
 

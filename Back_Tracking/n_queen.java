@@ -4,60 +4,66 @@ import java.util.*;
 
 /* LeetCode :- 51 https://leetcode.com/problems/n-queens/ */
 
-/* First see the DSA notes then have a try , about the coding 
- * For better understanding solution https://leetcode.com/problems/n-queens/solutions/5988136/beats-100-list-of-common-backtracking-problems/
+/* First see the DSA notes then try coding
+ * For better understanding see solution: https://leetcode.com/problems/n-queens/solutions/5988136/beats-100-list-of-common-backtracking-problems/
  */
 
-/* Need to create a board first  and fill that with doubts ( as intially there will be no queens present in the board */
-/* Create dfs , with the base condition and the next checking iteration */
-/* Base condition , once we reach the end the board should be converted to the format of res , so that it can be saved in to the res */
-/* Create a function to check whether the particular position is valid or not */
+/* Steps to solve N-Queens:
+ * 1. Create a board and fill it with dots (representing empty spaces)
+ * 2. Implement DFS with base condition and checking iterations
+ * 3. Base condition: when reaching the end, convert board to required format and save to result
+ * 4. Create function to validate queen placement positions
+ */
 public class n_queen {
 
-    public static List < List < String >> solveNQueens(int n) 
+    public static List<List<String>> solveNQueens(int boardSize) 
     {
-        char board[][] = new char[n][n];
-        for(char i[]:board)
+        char chessBoard[][] = new char[boardSize][boardSize];
+        for(char row[]: chessBoard)
         {
-            for(int j = 0 ; j < n ; j++ )
+            for(int col = 0; col < boardSize; col++)
             {
-                i[j]='.';
+                row[col] = '.';
             }
         }
-        List<List<String>> res = new ArrayList<>();
-        dfs(0,board,res);
-        return res;
+        List<List<String>> result = new ArrayList<>();
+        dfs(0, chessBoard, result);
+        return result;
     }
 
-    public static void dfs(int col,char[][] board,List<List<String>> res)
+    public static void dfs(int currentCol, char[][] chessBoard, List<List<String>> result)
     {
-        if(col==board.length)
+        if(currentCol == chessBoard.length)
         {
-            res.add(construct(board));
+            result.add(constructBoard(chessBoard));
             return;
         }
-        for(int row = 0 ; row < board.length ; row++)
+        for(int currentRow = 0; currentRow < chessBoard.length; currentRow++)
         {
-            if(isValid(row,col,board))
+            if(isValidPosition(currentRow, currentCol, chessBoard))
             {
-                board[row][col]='Q';
-                dfs(col+1,board,res);
-                board[row][col]='.';
+                chessBoard[currentRow][currentCol] = 'Q';
+                dfs(currentCol + 1, chessBoard, result);
+                chessBoard[currentRow][currentCol] = '.';
             }
         }
         return;
     }
 
-    public static boolean isValid(int row , int col , char[][] board)
+    public static boolean isValidPosition(int row, int col, char[][] chessBoard)
     {
-        /* Refer DSA notes */
-        int dum_row = row;
-        int dum_col = col;
+        /* Check three directions for queen attacks:
+         * 1. Upper left diagonal
+         * 2. Straight left
+         * 3. Lower left diagonal
+         */
+        int tempRow = row;
+        int tempCol = col;
 
-        /* Upper left */
-        while(row>=0 && col>=0)
+        /* Check upper left diagonal */
+        while(row >= 0 && col >= 0)
         {
-            if(board[row][col]=='Q')
+            if(chessBoard[row][col] == 'Q')
             {
                 return false;
             }
@@ -65,30 +71,26 @@ public class n_queen {
             col--;
         }
 
-        row = dum_row;
-        col = dum_col;
+        row = tempRow;
+        col = tempCol;
 
-        /* Striaght Left */
-
-        while(col>=0)
+        /* Check straight left */
+        while(col >= 0)
         {
-            if(board[row][col]=='Q')
+            if(chessBoard[row][col] == 'Q')
             {
                 return false;
             }
-
             col--;
         }
 
-        /* Lower right */
+        row = tempRow;
+        col = tempCol;
 
-        row = dum_row;
-        col = dum_col;
-
-        /* row starts from 0 and to run untill board.length */
-        while(row < board.length && col>=0)
+        /* Check lower left diagonal */
+        while(row < chessBoard.length && col >= 0)
         {
-            if(board[row][col]=='Q')
+            if(chessBoard[row][col] == 'Q')
             {
                 return false;
             }
@@ -98,37 +100,33 @@ public class n_queen {
         return true;
     }
 
-
-    public static List<String> construct(char[][] board)
+    public static List<String> constructBoard(char[][] chessBoard)
     {
-        //List<String> temp = new ArrayList<>(board);
-        // The line List<String> temp = new ArrayList<>(board) is wrong because you cannot directly create an ArrayList from a char[][] array. 
-        //The constructor ArrayList<>(Collection) expects a Collection type parameter, but board is a 2D char array. */
-
-        List<String> temp = new ArrayList<>();
-
-        /* the board contains ['.', 'q' , '.' , '.'] , ['.', '.' , '.' , 'q'] , ['q', '.' , '.' , '.'] , ['.', '.' , 'q' , '.'] */
-        /* We need to convert that into [".q.."] */
-        for(int i = 0 ; i < board.length ; i++)
+        List<String> boardConfiguration = new ArrayList<>();
+        
+        /* The board contains ['.', 'Q' , '.' , '.'] , ['.', '.' , '.' , 'Q'] , ['Q', '.' , '.' , '.'] , ['.', '.' , 'Q' , '.'] */
+        /* We need to convert that into [".Q.."] */
+        
+        for(int i = 0 ; i < chessBoard.length ; i++)
         {
-            String str = new String(board[i]);
-            temp.add(str);
+            String rowString = new String(chessBoard[i]);
+            boardConfiguration.add(rowString);
         }
 
-        return temp;
+        return boardConfiguration;
     }
 
     public static void main(String args[]) {
-        int N = 4;
-        List < List < String >> queen = solveNQueens(N);
-        int i = 1;
-        for (List < String > it: queen) {
-            System.out.println("Arrangement " + i);
-            for (String s: it) {
-                System.out.println(s);
+        int boardSize = 4;
+        List<List<String>> queenSolutions = solveNQueens(boardSize);
+        int solutionNumber = 1;
+        for(List<String> solution: queenSolutions) {
+            System.out.println("Arrangement " + solutionNumber);
+            for(String boardRow: solution) {
+                System.out.println(boardRow);
             }
             System.out.println();
-            i += 1;
+            solutionNumber += 1;
         }
     }
     

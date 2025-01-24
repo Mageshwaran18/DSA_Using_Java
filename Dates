@@ -144,3 +144,11 @@ map.clear()              // Remove all entries
 
 23.1.25
 
+int [] .length
+String .length()
+List<Integer> slicedList = numsList.subList(0, 3)
+String new_str = str.substring(0,i) + str.substring(i+1);
+int[] nums = {1, 2, 3, 4, 5};
+int[] firstSlice = Arrays.copyOfRange(nums, 0, 3); // gets elements 1,2,3
+int[] secondSlice = Arrays.copyOfRange(nums, 3, nums.length); // gets elements 4,5
+

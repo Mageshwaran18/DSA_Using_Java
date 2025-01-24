@@ -1,0 +1,5 @@
+Trie :- 
+
+Number of distinct substrings in a string --> A2Z
+
+Power Sets --> Print all subsets and subsequences 

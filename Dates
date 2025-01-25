@@ -152,3 +152,6 @@ int[] nums = {1, 2, 3, 4, 5};
 int[] firstSlice = Arrays.copyOfRange(nums, 0, 3); // gets elements 1,2,3
 int[] secondSlice = Arrays.copyOfRange(nums, 3, nums.length); // gets elements 4,5
 
+24.1.25 
+
+board[3*(row/3)+i/3][3*(col/3)+i%3]

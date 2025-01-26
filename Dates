@@ -155,3 +155,17 @@ int[] secondSlice = Arrays.copyOfRange(nums, 3, nums.length); // gets elements 4
 24.1.25 
 
 board[3*(row/3)+i/3][3*(col/3)+i%3]
+
+25.1.25
+
+i & (1 << j))!=0
+
+The expression 1 << j is a bitwise left shift operation in many programming languages, including Java and C#.
+
+Here's a breakdown of what it does:
+
+1 is the integer value 1 in binary, which is 0001.
+<< is the left shift operator.
+j is the number of positions to shift the bits to the left.
+
+26.1.25

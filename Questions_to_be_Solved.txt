@@ -13,3 +13,5 @@ Assign the cookies --> LeetCode
 Merge intervals --> LeetCode
 
 Minimum platforms --> GFG
+
+Jump Game --> LeetCode 55

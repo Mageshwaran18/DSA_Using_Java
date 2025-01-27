@@ -1,4 +1,4 @@
-package Math;
+package Maths;
 
 /*Leetcode number -->  1780 */
 

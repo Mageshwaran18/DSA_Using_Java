@@ -1,4 +1,4 @@
-
+package Maths;
 /* LeetCode :- 1716  https://leetcode.com/problems/calculate-money-in-leetcode-bank/ */
 
 

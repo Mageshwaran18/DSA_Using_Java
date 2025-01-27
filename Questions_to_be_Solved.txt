@@ -7,3 +7,9 @@ Power Sets --> Print all subsets and subsequences Strivers sheet
 Letter Combinations of a Phone Number --> LeetCode :- 17
 
 LRU Cache --> LeetCode :- 146
+
+Assign the cookies --> LeetCode
+
+Merge intervals --> LeetCode
+
+Minimum platforms --> GFG

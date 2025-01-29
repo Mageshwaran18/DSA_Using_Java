@@ -65,6 +65,7 @@ Each object gets its own copy of instance methods and variables
 Methods can use 'this' keyword to refer to the current object
 Methods can access both instance and static members
 Different objects maintain their own state independently
+
 When a method is static:
 
 It belongs to the class itself, not to any specific object
@@ -174,3 +175,33 @@ j is the number of positions to shift the bits to the left.
 Arrays.sort(arr,(a,b)-> Integer.compare(a[0],b[0])); 
 
 28.1.25
+
+// ArrayList<Integer> ans = new ArrayList<>(new int[]{1,2,3}); // ERROR 
+        ArrayList<Integer> ans = new ArrayList<>(Arrays.asList(1,2,3)); // CRT
+        for(Integer i : ans)
+        {
+            System.out.print(i + " ");
+        }
+        return 0;
+OUTPUT :- 1 2 3
+
+
+
+boolean[] visited = new boolean[10];
+Integer i = 5;
+
+when accessing array elements using an Integer object as an index, 
+it automatically unboxes the Integer to its primitive int value. This process is called auto-unboxing.
+
+So even though i is an Integer object, Java implicitly converts it to an int when used as an array index. 
+This is why visited[i] works perfectly fine without any explicit conversion.
+
+// These both work the same way
+if(!visited[i])  // Auto-unboxing happens here
+if(!visited[i.intValue()]) // Explicit unboxing
+
+char str = '1';
+System.out.println(Character.getNumericValue(str));
+String str = '12'
+System.out.println(Integer.parseInt(str));
+

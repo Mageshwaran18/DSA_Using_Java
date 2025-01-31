@@ -46,31 +46,31 @@ public class dfs {
 
         public static void dfs_helper_rec(int start, boolean[] visited)
         {
-            System.out.print(start + " ");
-            visited[start]=true;
-            for(Integer i : edges.get(start))
-            {
-                if(!visited[i])
+           System.out.print(start + " ");
+           visited[start]=true;
+           for(int temp : edges.get(start))
+           {
+                if(!visited[temp])
                 {
-                    dfs_helper_rec(i,visited);
+                    dfs_helper_rec(temp,visited);
                 }
-            }
+           }
         }
 
         public static void dfs_helper_sta(int start,boolean[] visited)
         {
-            Stack<Integer> st = new Stack<>();
+            Stack<Integer> q = new Stack<>();
+            q.add(start);
             visited[start]=true;
-            st.add(start);
-            while(!st.isEmpty())
+            while(!q.isEmpty())
             {
-                int temp = st.pop();
-                System.out.print(temp + " ");
-                for(Integer i: edges.get(temp))
+                int node = q.pop();
+                System.out.print(node + " ");
+                for(Integer i: edges.get(node))
                 {
-                    if(!visited[i])
+                    if(!visited[i]) // explicit unboxing 
                     {
-                        st.add(i);
+                        q.push(i);
                         visited[i]=true;
                     }
                 }
@@ -93,10 +93,10 @@ public class dfs {
     {
         Graph gud = new Graph(5);
         gud.addUnDirected(0,1);        // 0 --- 1
-        gud.addUnDirected(0,2);        //  \   /|
-        gud.addUnDirected(1,2);        //   \ / |
-        gud.addUnDirected(1,3);        //    2  |
-        gud.addUnDirected(2,4);        //    |  |
+        gud.addUnDirected(0,2);        //  \   /
+        gud.addUnDirected(1,2);        //   \ / 
+                                                //    2  
+        gud.addUnDirected(2,4);        //    |  
         gud.addUnDirected(3,4);        //    4--3
         System.out.println("Undirected Graph's Depth First Search : ");
         gud.dfs(0);

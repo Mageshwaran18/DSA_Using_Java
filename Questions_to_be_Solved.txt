@@ -15,3 +15,7 @@ Merge intervals --> LeetCode
 Minimum platforms --> GFG
 
 Jump Game --> LeetCode 55
+
+Longest Palindromic Subsequence --> LeetCode 516
+
+Longest Common Subsequence --> LeetCode 1143

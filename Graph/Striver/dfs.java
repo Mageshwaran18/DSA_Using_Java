@@ -1,6 +1,7 @@
-package Graph;
+package Graph.Striver;
 import java.util.*;
-class bfs{
+
+public class dfs {
 
     static class Graph{
 
@@ -43,29 +44,51 @@ class bfs{
             }
         }
 
-        public void bfs(int start)
+        public static void dfs_helper_rec(int start, boolean[] visited)
         {
-            Queue<Integer> q = new LinkedList<>();
-            boolean visited[] = new boolean[this.edges.size()];
+           System.out.print(start + " ");
+           visited[start]=true;
+           for(int temp : edges.get(start))
+           {
+                if(!visited[temp])
+                {
+                    dfs_helper_rec(temp,visited);
+                }
+           }
+        }
+
+        public static void dfs_helper_sta(int start,boolean[] visited)
+        {
+            Stack<Integer> q = new Stack<>();
             q.add(start);
             visited[start]=true;
             while(!q.isEmpty())
             {
-                int node = q.poll();
+                int node = q.pop();
                 System.out.print(node + " ");
                 for(Integer i: edges.get(node))
                 {
                     if(!visited[i]) // explicit unboxing 
                     {
-                        q.add(i);
+                        q.push(i);
                         visited[i]=true;
                     }
                 }
             }
         }
+
+
+
+        public static void dfs(int start)
+        {
+            boolean visited_rec[] = new boolean[edges.size()];
+            System.out.print("Using Recursion :- ");
+            dfs_helper_rec(start,visited_rec);
+            System.out.print("\n Using Stack :- ");
+            boolean visited_sta[] = new boolean[edges.size()];
+            dfs_helper_sta(start,visited_sta);
+        }
     }
-
-
     public static void main(String args[])
     {
         Graph gud = new Graph(5);
@@ -75,8 +98,7 @@ class bfs{
                                                 //    2  
         gud.addUnDirected(2,4);        //    |  
         gud.addUnDirected(3,4);        //    4--3
-        System.out.println("Undirected Graph Breadth First Search : ");
-        gud.bfs(0);
+        System.out.println("Undirected Graph's Depth First Search : ");
+        gud.dfs(0);
     }
-
 }

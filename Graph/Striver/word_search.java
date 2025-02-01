@@ -1,4 +1,4 @@
-package Graph;
+package Graph.Striver;
 
 
 /* LeetCode :- 79 https://leetcode.com/problems/word-search/ */
@@ -19,7 +19,9 @@ public class word_search {
         }
         board[row][col]='.';
         if(dfs(row+1,col,need+1,board,word) || dfs(row-1,col,need+1,board,word) || 
-        dfs(row,col+1,need+1,board,word) || dfs(row,col-1,need+1,board,word)) // if diagonal is also allowed then call another two dfs calls dfs(row-1,col-1,need+1,borad,word) || dfs(row+1,col+1,need+1,borad,word) 
+        dfs(row,col+1,need+1,board,word) || dfs(row,col-1,need+1,board,word)) 
+        // if diagonal is also allowed then call another two dfs calls
+        // dfs(row-1,col-1,need+1,borad,word) || dfs(row+1,col+1,need+1,borad,word) 
         {
             return true;
         }

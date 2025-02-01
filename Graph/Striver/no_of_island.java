@@ -1,4 +1,4 @@
-package Graph;
+package Graph.Striver;
 
 /* LeetCode :- 200 https://leetcode.com/problems/number-of-islands/ */
 /* It's easy algorithm --> We should go only in horizontal or vertical and not in diagonal way

@@ -1,4 +1,4 @@
-package Graph;
+package Graph.Striver;
 
 /* LeetCode :-  733 https://leetcode.com/problems/flood-fill/description/ */
 

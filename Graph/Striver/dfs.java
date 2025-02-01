@@ -84,7 +84,7 @@ public class dfs {
             boolean visited_rec[] = new boolean[edges.size()];
             System.out.print("Using Recursion :- ");
             dfs_helper_rec(start,visited_rec);
-            System.out.print("\n Using Stack :- ");
+            System.out.print("\nUsing Stack :- ");
             boolean visited_sta[] = new boolean[edges.size()];
             dfs_helper_sta(start,visited_sta);
         }

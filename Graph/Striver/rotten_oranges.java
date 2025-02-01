@@ -1,4 +1,4 @@
-package Graph;
+package Graph.Striver;
 
 /* LeetCode :- 994 https://leetcode.com/problems/rotting-oranges/ */
 /* It's basically levelorder traversal and with certain conditions , Refer DSA notes  */

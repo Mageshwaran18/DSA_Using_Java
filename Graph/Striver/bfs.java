@@ -1,4 +1,4 @@
-package Graph;
+package Graph.Striver;
 import java.util.*;
 class bfs{
 
@@ -57,8 +57,9 @@ class bfs{
                 {
                     if(!visited[i]) // explicit unboxing 
                     {
-                        q.add(i);
-                        visited[i]=true;
+                        q.add(i); 
+                        // if anything going into queue is going to be get printed , if it's get printed then it's visited 
+                        visited[i]=true; 
                     }
                 }
             }

@@ -19,3 +19,16 @@ Jump Game --> LeetCode 55
 Longest Palindromic Subsequence --> LeetCode 516
 
 Longest Common Subsequence --> LeetCode 1143
+
+
+----- Graph Order-----
+
+DFS is like spreading of virus , untill the virus doesn't find the patient it will spread . It stops only at the end condition is met 
+
+1. Graph Creation 
+2. BFS , DFS 
+3. Find all path source target ( DFS )
+4. Number of Islands ( DFS )
+5. Flood Fill ( DFS )
+6. Word Search ( DFS )
+7. 

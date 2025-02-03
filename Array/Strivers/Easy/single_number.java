@@ -1,4 +1,4 @@
-package Array.Easy;
+package Array.Strivers.Easy;
 
 
 public class single_number {

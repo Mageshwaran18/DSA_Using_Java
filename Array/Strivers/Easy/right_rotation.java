@@ -1,4 +1,4 @@
-package Array.Easy;
+package Array.Strivers.Easy;
 
 
 /* LeetCode : 189 https://leetcode.com/problems/rotate-array/ */

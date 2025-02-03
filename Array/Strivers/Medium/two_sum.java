@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Strivers.Medium;
 
 import java.util.HashMap;
 import java.util.Map;

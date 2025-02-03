@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Strivers.Medium;
 
 public class kadanes {
     public void sortColors(int[] nums) 

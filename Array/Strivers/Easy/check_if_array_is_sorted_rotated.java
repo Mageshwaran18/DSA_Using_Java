@@ -1,4 +1,4 @@
-package Array.Easy;
+package Array.Strivers.Easy;
 
 
 /* Leetcode No:- 1752  https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/*/

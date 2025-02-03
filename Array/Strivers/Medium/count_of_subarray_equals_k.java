@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Strivers.Medium;
 import java.util.*;
 
 /* LeetCode:- 560 https://leetcode.com/problems/subarray-sum-equals-k/description/ */

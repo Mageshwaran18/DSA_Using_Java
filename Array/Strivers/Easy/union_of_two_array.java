@@ -1,4 +1,4 @@
-package Array.Easy;
+package Array.Strivers.Easy;
 
 import java.util.*;
 

@@ -214,3 +214,5 @@ System.out.println(Integer.parseInt(str));
 1.2.25
 
 2.2.25
+
+3.2.25

@@ -1,4 +1,4 @@
-package Array.Easy;
+package Array.Strivers.Easy;
 
 
 /* Hint :- It's a combination of 2 steps 

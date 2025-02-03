@@ -1,4 +1,4 @@
-package Array.Easy;
+package Array.Strivers.Easy;
 
 public class print_Alternately_Elements_in_Matrix {
 

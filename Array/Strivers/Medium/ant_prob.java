@@ -1,4 +1,4 @@
-package Array.Medium;
+package Array.Strivers.Medium;
 
 /* LeetCode :- 1503 https://leetcode.com/problems/last-moment-before-all-ants-fall-out-of-a-plank/description/
  * 

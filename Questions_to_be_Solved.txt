@@ -21,7 +21,7 @@ Longest Palindromic Subsequence --> LeetCode 516
 Longest Common Subsequence --> LeetCode 1143
 
 
------ Graph Order-----
+----- Graph Order -----
 
 DFS is like spreading of virus , untill the virus doesn't find the patient it will spread . It stops only at the end condition is met 
 
@@ -32,3 +32,9 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 5. Flood Fill ( DFS )
 6. Word Search ( DFS )
 7. 
+
+
+----- Arrays -----
+
+1.Majority Elements - I
+2.Majority Elements - II

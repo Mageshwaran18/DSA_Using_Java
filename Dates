@@ -216,3 +216,11 @@ System.out.println(Integer.parseInt(str));
 2.2.25
 
 3.2.25
+
+long i , long j 
+(int) i / j --> Show error because it will convert i into integer and divide that using the long j , which shows the error
+(int) (i/j) --> Divide first and then typecast it .
+            
+4.2.25
+
+

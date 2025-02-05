@@ -31,10 +31,13 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 4. Number of Islands ( DFS )
 5. Flood Fill ( DFS )
 6. Word Search ( DFS )
-7. 
+7. Count the Components ( DFS )
+8. Connected Components ( DFS )
 
 
 ----- Arrays -----
 
 1.Majority Elements - I
 2.Majority Elements - II
+3.Two Sum 
+4.Three Sum 

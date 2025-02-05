@@ -99,7 +99,9 @@ public class ThreeSum {
 
                         // find the next unique element
                         while(j < k && nums[j]==nums[j-1])j++;
-                        while(j < k && nums[k]==nums[k-1])k--;
+
+
+                        while(j < k && nums[k]==nums[k+1])k--;// for k as we are traversing from the back , the previous element would be k+1 
                       
                     }
                 }

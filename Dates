@@ -163,7 +163,7 @@ i & (1 << j))!=0
 
 The expression 1 << j is a bitwise left shift operation in many programming languages, including Java and C#.
 
-Here's a breakdown of what it does:
+Heres a breakdown of what it does:
 
 1 is the integer value 1 in binary, which is 0001.
 << is the left shift operator.
@@ -223,4 +223,11 @@ long i , long j
             
 4.2.25
 
+hm.put(nums[i],hm.getOrDefault(nums[i],0)+1);
 
+5.2.25
+
+int new_sub[] = IntStream.concat(Arrays.stream(sub1), Arrays.stream(sub2)).toArray();
+List<Integer> temp = new ArrayList<>(Arrays.asList(arr.get(low),arr.get(high),found));
+Collections.sort(temp);
+Set<List<Integer>> set = new HashSet<>();

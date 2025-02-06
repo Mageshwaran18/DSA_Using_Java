@@ -41,3 +41,8 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 2.Majority Elements - II
 3.Two Sum 
 4.Three Sum 
+5.Dutch National Flag Algo
+6.Kadanes Algorithm 
+7.Maximum Subarray 
+8.Maximum Score from Subarray Minimums
+

@@ -238,3 +238,6 @@ Given N sized array :-
 
 Number of subarrays that can be formed = N * ( N + 1 ) / 2
 Number of subsequences that can be formed ( including the empty subsequence ) = 2 ^ N
+
+7.2.25
+8.2.25

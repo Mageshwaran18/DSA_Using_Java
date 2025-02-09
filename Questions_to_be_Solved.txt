@@ -33,7 +33,7 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 6. Word Search ( DFS )
 7. Count the Components ( DFS )
 8. Connected Components ( DFS )
-
+9. Number of Provinces ( DFS )
 
 ----- Arrays -----
 

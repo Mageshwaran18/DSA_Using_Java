@@ -243,3 +243,12 @@ Number of subsequences that can be formed ( including the empty subsequence ) = 
 8.2.25
 
 9.2.25
+
+ArrayList<Integer> list = new ArrayList<>();
+int[] arr = new int[list.size()];
+for(int i = 0; i < list.size(); i++) {
+    arr[i] = list.get(i);
+}
+
+ArrayList<Integer> list = new ArrayList<>();
+Collections.reverse(list);

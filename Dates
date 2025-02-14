@@ -260,3 +260,10 @@ Collections.reverse(list);
 13.2.25 
 
 In graph don't always think about expanding from inside to outside , also think about it's alternative 
+
+14.2.25
+
+A -> 65
+Z -> 90
+a -> 97
+z -> 122

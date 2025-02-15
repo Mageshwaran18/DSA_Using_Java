@@ -16,7 +16,7 @@ class word_ladder_I
             this.level=level;
         }
     }
-    public static int word_ladder_I(String bw, String ew, List<String> wordlist)
+    public static int word_ladder_I_my_approach(String bw, String ew, List<String> wordlist)
     {
         Queue<Pair> q = new LinkedList<>();
         Set<String> wl = new HashSet<>();
@@ -59,12 +59,48 @@ class word_ladder_I
         return 0;
     }
 
+    public static int word_ladder_I_striver(String bw, String ew, List<String> wl)
+    {
+        Queue<Pair> q = new LinkedList<>();
+        Set<String> wordlist = new HashSet<>();
+        for(String str: wl)
+        {
+            wordlist.add(str);
+        }
+        q.add(new Pair(bw,1));
+        while(!q.isEmpty())
+        {
+            Pair pop = q.poll();
+            String par_str = pop.str;
+            int par_lev = pop.level;
+            for(int i = 0 ; i < par_str.length() ; i++)
+            {
+                for(int j = 97 ; j <=122 ; j++)
+                {
+                    char c = (char)j;
+                    String child = par_str.substring(0,i)+c+par_str.substring(i+1);
+                    if(wordlist.contains(child) && child.equals(ew))
+                    {
+                        return par_lev+1;
+                    }
+                    else if(wordlist.contains(child))
+                    {
+                        wordlist.remove(child);
+                        q.add(new Pair(child,par_lev+1));
+                    }
+                }
+            }
+        }
+
+        return 0;
+        
+    }
+
     public static void main(String[] args) {
         String beginWord = "hit";
         String endWord = "cog";
-        List<String> wordList = Arrays.asList("hot","dot","dog","lot","log","cog");
-        
-        int result = word_ladder_I(beginWord, endWord, wordList);
+        List<String> wordList = Arrays.asList("hot","dot","dog","lot","log");        
+        int result = word_ladder_I_striver(beginWord, endWord, wordList);
         System.out.println("Length of shortest transformation sequence: " + result);
     }
 }

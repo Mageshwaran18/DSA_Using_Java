@@ -270,3 +270,14 @@ z -> 122
 
 15.2.25
 16.2.25
+
+Integer.bitCount(a)
+
+@Override 
+public static finalize() throws Throwable {
+
+    System.out.println("The object has been removed using the garbage collector of the java ");
+
+}
+
+A primitive data type declared as final cannot be modified.

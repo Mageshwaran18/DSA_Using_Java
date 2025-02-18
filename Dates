@@ -271,6 +271,7 @@ z -> 122
 15.2.25
 16.2.25
 
+17.2.25
 Integer.bitCount(a)
 
 @Override 
@@ -281,3 +282,11 @@ public static finalize() throws Throwable {
 }
 
 A primitive data type declared as final cannot be modified.
+
+
+{
+    "java.debug.settings.console": "integratedTerminal"
+}
+
+18.2.25
+

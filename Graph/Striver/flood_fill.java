@@ -46,4 +46,29 @@ public class flood_fill {
 
     }
     
+    public static void main(String[] args) {
+        int[][] image = {
+            {1, 1, 1},
+            {1, 1, 0},
+            {1, 0, 1}
+        };
+        int sr = 1, sc = 1, color = 2;
+        
+        System.out.println("Original Image:");
+        printImage(image);
+        
+        int[][] result = floodFill(image, sr, sc, color);
+        
+        System.out.println("\nAfter Flood Fill:");
+        printImage(result);
+    }
+    
+    private static void printImage(int[][] image) {
+        for (int[] row : image) {
+            for (int pixel : row) {
+                System.out.print(pixel + " ");
+            }
+            System.out.println();
+        }
+    }
 }

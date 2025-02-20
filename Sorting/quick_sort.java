@@ -69,6 +69,23 @@ public class quick_sort {
         }
     }
 
+    public static int[] use_quick_sort(int[] nums)
+    {
+        int n = nums.length;
+        int res[] = new int[n];
+        List<Integer> arr = new ArrayList<>();
+        for(int i = 0 ; i < n ; i++)
+        {
+            arr.add(nums[i]);
+        }
+        quick_sort(arr,0,n-1);
+        for(int i = 0 ; i < n ; i++)
+        {
+            res[i]=arr.get(i);
+        }
+        return res;
+    }
+
 
     public static void main(String[] args) {
         

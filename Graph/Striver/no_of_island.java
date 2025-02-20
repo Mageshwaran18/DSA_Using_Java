@@ -20,6 +20,9 @@ public class no_of_island {
         }
         else
         {
+            // https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1
+            // If the diagonals 1 are also calculated then we should check in the 8 directions , so we can have a loop to that.
+            // int dir[][] = {{-1,0} , {-1,1} ,{0,1} , {1,1} , {1,0} , {1,-1} , {0,-1} , {-1,-1}};
             grid[row][col]='0';
             dfs(row+1,col,grid);
             dfs(row-1,col,grid);

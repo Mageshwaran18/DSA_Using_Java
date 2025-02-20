@@ -285,9 +285,10 @@ A primitive data type declared as final cannot be modified.
 
 
 {
-    "java.debug.settings.console": "integratedTerminal"
+    "java.debug.settings.console": "internalConsole"
 }
 
 18.2.25
 19.2.25
+20.2.25
 

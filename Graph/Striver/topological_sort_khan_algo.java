@@ -1,6 +1,9 @@
-package Graph;
+package Graph.Striver;
 
 import java.util.*;
+
+/* GFG :-  https://www.geeksforgeeks.org/problems/topological-sort/1 */
+/* Refer the DSA notes */
 
 public class topological_sort_khan_algo {
 

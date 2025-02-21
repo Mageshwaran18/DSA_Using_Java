@@ -1,8 +1,8 @@
-package Graph;
+package Graph.Striver;
 
 import java.util.ArrayList;
 
-public class cycle_in_undirected {
+public class cycle_in_undirected_dfs {
 
     public static boolean dfs(int cur , int parent , ArrayList<ArrayList<Integer>> adj,boolean visited[])
     {

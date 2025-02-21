@@ -29,13 +29,22 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 2. BFS , DFS 
 3. Find all path source target ( DFS )
 4. Number of Islands ( DFS )
-5. Flood Fill ( DFS )
-6. Word Search ( DFS )
-7. Count the Components ( DFS )
-8. Connected Components ( DFS )
-9. Number of Provinces ( DFS )
-10. Surrounded Regions ( DFS )
-11. Number of Enclaves ( DFS )
+5. Number of Islands in GG ( DFS )
+6. Flood Fill ( DFS )
+7. Bipartite Graph ( DFS )
+8. Word Search ( DFS )
+9. Count the Components ( DFS )
+10. Connected Components ( DFS )
+11. Number of Provinces ( DFS )
+12. Surrounded Regions ( DFS )
+13. Number of Enclaves ( DFS )
+14. Word Ladder - I ( BFS )
+15. Cycle Detection in Undirected Graph ( DFS )
+16. Cycle Detection in Undirected Graph ( BFS )
+16. TopologicalSort & Khan Algo 
+17. Course Schedule I
+18. Course Schedule II 
+
 
 ----- Arrays -----
 

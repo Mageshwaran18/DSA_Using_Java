@@ -292,3 +292,19 @@ A primitive data type declared as final cannot be modified.
 19.2.25
 20.2.25
 21.2.25
+
+// Converts integer (pos+1) to String representation
+Integer.toString(pos+1);
+
+22.2.25
+
+Converting double to int can lead to precision errors due to floating-point approximations.
+
+public class DoublePrecisionIssue {
+    public static void main(String[] args) {
+        double result = 10 * (9.0 / 2);  // Equivalent to 10 * 4.5
+        System.out.println((int) result);  // Output: 44 (Expected: 45)
+        long result = 10 * 9 / 2;  // Equivalent to (10 * 9) / 2
+        System.out.println(result);  // Output: 45
+    }
+}

@@ -308,3 +308,5 @@ public class DoublePrecisionIssue {
         System.out.println(result);  // Output: 45
     }
 }
+
+23.2.25

@@ -310,3 +310,14 @@ public class DoublePrecisionIssue {
 }
 
 23.2.25
+
+List is an interface, and ArrayList is one of its implementations. 
+Since interfaces cannot be instantiated, you cannot create an object of List directly. 
+However, you can create an object of ArrayList and refer to it using a List reference.
+
+When you return an ArrayList while the return type is List, Java performs upcasting automatically.
+
+24.2.25
+
+When you apply topological sort to a cyclic graph , 
+it will traverse through all the nodes of the graph which will not form cycle or included in the cycle 

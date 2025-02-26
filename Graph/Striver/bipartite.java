@@ -2,6 +2,8 @@ package Graph.Striver;
 
 /* LeetCode :- 785 https://leetcode.com/problems/is-graph-bipartite/description/ */
 
+/* In a disconnected graph if one graph is not bipartite , then the entire graph will not be a bipatite  */
+
 public class bipartite {
 
     public static boolean dfs_helper(int i,int [][] graph,char par , char child , boolean[] visited , char[] clr)

@@ -332,4 +332,14 @@ Revised Longest substring without repeating characters
 
 27.2.25
 
+String startWord = "bat";
+Queue<ArrayList<String>> q = new LinkedList<>();
+q.add(new ArrayList<>(Arrays.asList(startWord)));
 
+
+The error java.util.ConcurrentModificationException occurs when a collection (like an ArrayList) is modified 
+while iterating over it using an iterator or an enhanced for loop.
+
+
+ The remove() method of Set (like HashSet or TreeSet) does not throw an error if the element is not present. 
+ Instead, it simply returns false.

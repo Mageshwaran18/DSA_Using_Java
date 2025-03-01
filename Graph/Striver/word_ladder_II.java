@@ -4,6 +4,8 @@ import java.util.*;
 /* LeetCode:- 126 https://leetcode.com/problems/word-ladder-ii/description/ */
 
 /* My Approach --> Generate all the possible path and find the minimum paths in it , May lead to TLE 
+
+    Better Approach --> Modified version of the wordladder I ( Refer DSA notes )
  */
 
 public class word_ladder_II {
@@ -65,6 +67,8 @@ public class word_ladder_II {
         return shortest;
     }
     
+
+    /* Better Approach  */
     public static List<List<String>> findLadders(String bw, String ew, List<String> wordList) 
     {
         List<String> wl = new ArrayList<>(wordList);  // Create new modifiable list
@@ -74,6 +78,58 @@ public class word_ladder_II {
         dfs_helper(bw, ew, wl, visited);
         return ans;
     }
+
+    public ArrayList<ArrayList<String>> findSequences(String startWord, String targetWord, String[] wordList) {
+        int level = 0;                                                 
+        Set<String> st = new HashSet<>();
+        Queue<ArrayList<String>> q = new LinkedList<>();
+        ArrayList<String> used = new ArrayList<>();
+        ArrayList<ArrayList<String>> ans = new ArrayList<>(); 
+        
+        for(String str : wordList) {
+            st.add(str);
+        }
+        
+        q.add(new ArrayList<>(Arrays.asList(startWord)));
+        used.add(startWord);
+        
+        while(!q.isEmpty()) {
+            ArrayList<String> poped = q.poll();
+            if(poped.size() > level) {
+                level++;
+                for(String us : used) {
+                    st.remove(us);
+                }
+            }
+
+            if(poped.get(poped.size()-1).equals(targetWord)) {
+                if(ans.size()==0) {
+                    ans.add(poped);
+                }
+                else if(ans.get(ans.size()-1).size()==poped.size()) {
+                    ans.add(poped);
+                }
+            }
+
+            String last = poped.get(poped.size()-1);
+
+            for(int i = 0; i < last.length(); i++) {
+                for(int j = 97; j <= 122; j++) {
+                    char c = (char)j;
+                    String child = last.substring(0,i) + c + last.substring(i+1);
+                    if(st.contains(child)) {
+                        poped.add(child);
+                        used.add(child);
+                        ArrayList<String> temp = new ArrayList<>(poped);
+                        q.add(temp);
+                        poped.remove(poped.size()-1);
+                    }
+                }
+            }
+        }
+        return ans;
+    }    
+
     
     public static void main(String[] args) {
         String beginWord = "qa";

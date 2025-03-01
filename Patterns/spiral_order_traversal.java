@@ -1,7 +1,7 @@
 package Patterns;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.List;
+/* LeetCode :- 54 https://leetcode.com/problems/spiral-matrix/description/ */
 
 
 public class spiral_order_traversal {
@@ -17,7 +17,7 @@ public class spiral_order_traversal {
         int col = matrix[0].length;
 
         int top = 0 , bottom = row-1 , left = 0 , right = col-1;
-        while(top <= bottom && left<=right)
+        while(top <= bottom && left<=right) // At centre value both the left and right will be equall and top and bottom will be equall
         {
             for(int i = left ; i <=right;i++)
             {
@@ -29,7 +29,7 @@ public class spiral_order_traversal {
                 res.add(matrix[i][right]);
             }
             right--;
-            if(top<=bottom)
+            if(top<=bottom) /* [[2,5,8][4,0,-1]]  try this in dry run you will get to know whether you should put equal to or not */
             {
                 for(int i = right ; i >=left ; i--)
                 {

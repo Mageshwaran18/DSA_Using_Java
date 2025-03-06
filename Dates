@@ -395,3 +395,5 @@ TreeMap<Integer, Integer> tm = new TreeMap<>();
 *  0---> the node and it's weight attached to the node 0 
 *  1---> the node and it's weight attached to the node 1
 */
+
+Refer the DSA notes of yesterday 

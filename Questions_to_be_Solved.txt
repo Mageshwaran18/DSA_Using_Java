@@ -43,7 +43,9 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 16. Cycle Detection in Undirected Graph ( BFS )
 16. TopologicalSort & Khan Algo 
 17. Course Schedule I
-18. Course Schedule II 
+18. Course Schedule II
+19. Dijikstra 
+20. Shortes path in Directed Graph 
 
 
 ----- Arrays -----
@@ -56,4 +58,9 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 6.Kadanes Algorithm 
 7.Maximum Subarray 
 8.Maximum Score from Subarray Minimums
+
+----- Trees -----
+
+1.Vertical Order traversal of a Tree
+2.Top view of a Tree
 

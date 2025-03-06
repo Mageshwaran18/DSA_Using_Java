@@ -8,6 +8,7 @@ import java.util.*;
  * But here we will add all the nodes in that vertical line.
  * 
  * Note :- If two nodes are in the same vertical line and same vertical level , then store them in the sorted manner .
+ *         In strivers he stated that level shouldn't contains the duplicate values but , there is no such condition in the leetcode , hence we are not using treeset instead of the ArrayList 
  * 
  * 
  */
@@ -94,12 +95,19 @@ public class vertical_order_traversal {
     }
 
     public static void main(String[] args) {
-        vertical_order_traversal solution = new vertical_order_traversal();
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(9);
-        root.right = new TreeNode(20);
-        root.right.left = new TreeNode(15);
-        root.right.right = new TreeNode(7);
+             /*
+                     3
+                   /   \
+                  1     4
+                 / \   /
+                0   2 2
+             */
+             TreeNode root = new TreeNode(3);
+             root.left = new TreeNode(1);
+             root.right = new TreeNode(4);
+             root.left.left = new TreeNode(0);
+             root.left.right = new TreeNode(2);
+             root.right.left = new TreeNode(2);
 
         List<List<Integer>> result = verticalTraversal(root);
         System.out.println("Vertical Order Traversal: " + result);

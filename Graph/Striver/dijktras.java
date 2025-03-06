@@ -1,9 +1,12 @@
 package Graph.Striver;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
+
+
+/* Required format for the dijikstra to be applied [ [[node1,weight1],[node2,weight2]] --> 0 , [[node3,weight3],[node4,weight4]]--> 1 ] 
+*  0---> the node and it's weight attached to the node 0 
+*  1---> the node and it's weight attached to the node 1
+*/
 
 class iPair {
     int first, second;

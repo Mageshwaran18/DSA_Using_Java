@@ -3,6 +3,15 @@ import java.util.*;
 
 /* LeetCode:- 987 https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/ */
 
+/*
+ * It's more related to top view of the tree but in the top view of the tree only the first occuring digit of the vertical distance is added
+ * But here we will add all the nodes in that vertical line.
+ * 
+ * Note :- If two nodes are in the same vertical line and same vertical level , then store them in the sorted manner .
+ * 
+ * 
+ */
+
 public class vertical_order_traversal {
 
     static class TreeNode {
@@ -33,8 +42,13 @@ public class vertical_order_traversal {
     }
 
 
+
     public static List<List<Integer>> verticalTraversal(TreeNode root) {
 
+        // if required refer 5.3.25 dates ( if needed )
+
+        // {vertical line ={level = { nodes }}
+        // {3rd vertical line = { 4th level = { 4,5,6 } }} --> Nodes in the same level and vertical line and they were sorted 
         TreeMap<Integer,TreeMap<Integer,ArrayList<Integer>>> tm = new TreeMap<>();
         Queue<iPair> q = new LinkedList<>();
         q.add(new iPair(0,root,0));
@@ -45,9 +59,12 @@ public class vertical_order_traversal {
             int cur_vertical_line = poped.vertical_line;
             TreeNode cur_node = poped.node;
 
-            tm.computeIfAbsent(cur_vertical_line,k-> new TreeMap<>())
-              .computeIfAbsent(cur_length,k->new ArrayList<>())
-              .add(cur_node.val);
+            // Search the key , if the key is not found then perform the lambda function . 
+            // Else return the value for that key 
+
+            tm.computeIfAbsent(cur_vertical_line,k-> new TreeMap<>())// create level
+              .computeIfAbsent(cur_length,k->new ArrayList<>())// create arraylist for that level 
+              .add(cur_node.val);// add it to the arraylist of that level 
             
             if(cur_node.left!=null)
             {
@@ -67,7 +84,7 @@ public class vertical_order_traversal {
             for(Map.Entry<Integer,ArrayList<Integer>> entry2 : cur_ver_nodes.entrySet())
             {
                 ArrayList<Integer> cur_len_nodes = entry2.getValue();
-                Collections.sort(cur_len_nodes);
+                Collections.sort(cur_len_nodes); // Sort the nodes in that level 
                 temp.addAll(cur_len_nodes);
             }
             ans.add(new ArrayList<>(temp));

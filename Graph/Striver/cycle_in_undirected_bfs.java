@@ -34,17 +34,23 @@ public class cycle_in_undirected_bfs {
             pair temp = q.poll();
             int par = temp.par;
             int node = temp.node;
-            visited[node]=true;
-            for(int neigh : adj.get(node))
+            if(visited[node])
             {
-                if(!visited[neigh])
+                continue;
+            }
+            else
+            {
+                visited[node]=true;
+                for(int neigh : adj.get(node))
                 {
-                    q.add(new pair(node,neigh));
-                    visited[neigh]=true;
-                }
-                else if(neigh!=par)
-                {
-                    return true;
+                    if(!visited[neigh])
+                    {
+                        q.add(new pair(node,neigh));
+                    }
+                    else if(neigh!=par)
+                    {
+                        return true;
+                    }
                 }
             }
         }

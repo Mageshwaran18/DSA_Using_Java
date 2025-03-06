@@ -51,20 +51,27 @@ class shortest_path_in_directed_graph
             iPair poped = q.poll();
             int cur_no = poped.node;
             int cur_we = poped.we;
-            visited[cur_no]=true;
-            if(adj.containsKey(cur_no))
+            if(visited[cur_no])
             {
-                for(ArrayList<Integer> neigh : adj.get(cur_no))
+                continue;
+            }
+            else
+            {
+                visited[cur_no]=true;
+                if(adj.containsKey(cur_no))
                 {
-                    int neigh_no = neigh.get(0);
-                    int neigh_we = neigh.get(1);
-                    if(!visited[neigh_no])
+                    for(ArrayList<Integer> neigh : adj.get(cur_no))
                     {
-                        int total = neigh_we+cur_we;
-                        if(ans[neigh_no]==-1 || total < ans[neigh_no])
+                        int neigh_no = neigh.get(0);
+                        int neigh_we = neigh.get(1);
+                        if(!visited[neigh_no])
                         {
-                            ans[neigh_no]=total;
-                            q.add(new iPair(neigh_no,total));
+                            int total = neigh_we+cur_we;
+                            if(ans[neigh_no]==-1 || total < ans[neigh_no])
+                            {
+                                ans[neigh_no]=total;
+                                q.add(new iPair(neigh_no,total));
+                            }
                         }
                     }
                 }

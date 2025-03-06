@@ -42,10 +42,11 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 15. Cycle Detection in Undirected Graph ( DFS )
 16. Cycle Detection in Undirected Graph ( BFS )
 16. TopologicalSort & Khan Algo 
-17. Course Schedule I
-18. Course Schedule II
-19. Dijikstra 
-20. Shortes path in Directed Graph 
+17. Course Schedule I ( Topological Sort )
+18. Course Schedule II ( Topological Sort )
+19. BFS
+20. Dijikstra ( BFS )
+21. Shortes path in Directed Graph ( Dijikstra )
 
 
 ----- Arrays -----

@@ -1,5 +1,22 @@
 package Graph.Striver;
 import java.util.*;
+
+
+/* 
+ * 
+ * Remove --> Poping of the elements from the queue
+ * 
+ * Work --> if it's not visited:-
+ *              Making that true and perfoming actions in them 
+ *          if visited :- 
+ *              Don't perform operations
+ * 
+ * Add --> Add it's neighbours to the queue
+ * 
+ * 
+ */
+
+
 class bfs{
 
     static class Graph{
@@ -48,18 +65,23 @@ class bfs{
             Queue<Integer> q = new LinkedList<>();
             boolean visited[] = new boolean[this.edges.size()];
             q.add(start);
-            visited[start]=true;
             while(!q.isEmpty())
             {
                 int node = q.poll();
-                System.out.print(node + " ");
-                for(Integer i: edges.get(node))
+                if(visited[node])
                 {
-                    if(!visited[i]) // explicit unboxing 
+                    continue;
+                }
+                else
+                {
+                    visited[node]=true;
+                    System.out.print(node + " ");
+                    for(Integer i: edges.get(node))
                     {
-                        q.add(i); 
-                        // if anything going into queue is going to be get printed , if it's get printed then it's visited 
-                        visited[i]=true; 
+                        if(!visited[i]) // explicit unboxing 
+                        {
+                            q.add(i); 
+                        }
                     }
                 }
             }

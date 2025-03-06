@@ -31,27 +31,33 @@ class word_ladder_I
             Pair temp = q.poll();
             String par = temp.str;
             int par_lev = temp.level;
-            visited.add(par);
-            for(int i = 0 ; i < par.length() ; i++)
+            if(visited.contains(par))
             {
-                for(int j = 97 ; j <= 122 ; j++)
+                continue;
+            }
+            else
+            {
+                visited.add(par);
+                for(int i = 0 ; i < par.length() ; i++)
                 {
-                    char c = (char)j;
-                    String chi = par.substring(0,i) + c + par.substring(i+1);
-                    if(wl.contains(chi) && !visited.contains(chi))
+                    for(int j = 97 ; j <= 122 ; j++)
                     {
-                        // System.out.println(chi);
-                        if(chi.equals(ew))
+                        char c = (char)j;
+                        String chi = par.substring(0,i) + c + par.substring(i+1);
+                        if(wl.contains(chi) && !visited.contains(chi))
                         {
-                            return par_lev+1;
+                            // System.out.println(chi);
+                            if(chi.equals(ew))
+                            {
+                                return par_lev+1;
+                            }
+                            else
+                            {
+                                q.add(new Pair(chi,par_lev+1));
+                            }
                         }
-                        else
-                        {
-                            q.add(new Pair(chi,par_lev+1));
-                            visited.add(chi);
-                        }
-                    }
 
+                    }
                 }
             }
         }

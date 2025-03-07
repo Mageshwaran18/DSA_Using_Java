@@ -33,14 +33,13 @@ class shortest_path_in_directed_graph
         
         int ans [] = new int[V];
         boolean visited[] = new boolean[V];
-        HashMap<Integer,ArrayList<ArrayList<Integer>>> adj = new HashMap<>();
+        HashMap<Integer,ArrayList<int[]>> adj = new HashMap<>();
         PriorityQueue<iPair> q = new PriorityQueue<>((a,b)->a.we-b.we);
         for(int i  = 0 ;i < E ; i++)
         {
-            ArrayList<Integer> edge = new ArrayList<>();
-            edge.add(edges[i][1]);
-            edge.add(edges[i][2]);
+            int edge [] = {edges[i][1],edges[i][2]};
             adj.computeIfAbsent(edges[i][0],k-> new ArrayList<>()).add(edge);
+            
             
         }
         Arrays.fill(ans,-1);
@@ -60,10 +59,10 @@ class shortest_path_in_directed_graph
                 visited[cur_no]=true;
                 if(adj.containsKey(cur_no))
                 {
-                    for(ArrayList<Integer> neigh : adj.get(cur_no))
+                    for(int[] neigh : adj.get(cur_no))
                     {
-                        int neigh_no = neigh.get(0);
-                        int neigh_we = neigh.get(1);
+                        int neigh_no = neigh[0];
+                        int neigh_we = neigh[1];
                         if(!visited[neigh_no])
                         {
                             int total = neigh_we+cur_we;

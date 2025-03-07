@@ -34,7 +34,7 @@ public class shortest_path_in_binary_matrix {
             return -1;
         }
         boolean visited[][]  = new boolean [n][m];
-        Queue<iPair> pq = new LinkedList<>();
+        PriorityQueue<iPair> pq = new PriorityQueue<>((a,b) -> a.we-b.we);
         int req_pos[] = {n-1,m-1};
         int ans = -1;
         pq.add(new iPair(0,0,1)); 

@@ -7,7 +7,7 @@ import java.util.*;
  * Remove --> Poping of the elements from the queue
  * 
  * Work --> if it's not visited:-
- *              Making that true and perfoming actions in them 
+ *              Marking that true and perfoming actions in them 
  *          if visited :- 
  *              Don't perform operations
  * 

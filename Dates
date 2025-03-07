@@ -397,3 +397,11 @@ TreeMap<Integer, Integer> tm = new TreeMap<>();
 */
 
 Refer the DSA notes of yesterday 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7.3.25
+
+String str = "Hello";
+String w = str+str;
+System.out.println(w.contains(String.valueOf('e')));

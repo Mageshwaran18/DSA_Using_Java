@@ -1,4 +1,4 @@
-package Dynamic_Problem;
+package Dynamic_Programming;
 import java.util.*;
 public class fabinoci_series {
     public static int fabinoci_series(int n)

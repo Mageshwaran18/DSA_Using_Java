@@ -1,4 +1,4 @@
-package Dynamic_Problem;
+package Dynamic_Programming;
 
 
 /* LeetCode :- 70 https://leetcode.com/problems/climbing-stairs/description/ */

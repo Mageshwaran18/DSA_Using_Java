@@ -405,3 +405,9 @@ Refer the DSA notes of yesterday
 String str = "Hello";
 String w = str+str;
 System.out.println(w.contains(String.valueOf('e')));
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8.3.25
+
+Revised Insertion and Selection Sort 

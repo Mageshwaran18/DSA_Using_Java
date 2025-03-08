@@ -1,9 +1,15 @@
 package Sorting;
 
+/* 
+ * 
+ * Keeps shrinking the unsorted portion while growing the sorted portion.
+ * No (May change the order of duplicate elements).
+ */
+
 /* If the i is 0 , then traverse from the i + 1 to till the end of the list and find the minium element of arr[i+1:length-1] 
  * Replace the element of arr[i] and the minimum of the following arr[i+1;length-1]
  * 
- * Time Complexity --> O(n^2)
+ * Time Complexity --> O(n^2) ( For both best and worst case ).
 */
 
 public class selection_sort {

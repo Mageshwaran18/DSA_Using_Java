@@ -1,13 +1,21 @@
 package Sorting;
 
-/* Insert the element to it's correct position */
+/* Insert the element to it's correct position 
+ * Yes (Maintains the order of duplicate elements).
+*/
+
+/* Time Complexity : O(n^2)
+ * Best Case : O(n) - When array is already sorted
+ * Average Case : O(n^2)
+ * Worst Case : O(n^2) - When array is sorted in reverse order
+ * Space Complexity : O(1)
+ */
 
 /*
  * In insertion sort , for the first iteration we assume that first element is sorted
  * Outer loop -> Traverse from the 0 to n 
  * Inner loop -> Pick an element , compare that with the left element , if it's left swap it 
  *            -> Repeat this untill the above condition fails
- * 
  */
 
 

@@ -4,6 +4,14 @@ import java.util.PriorityQueue;
 
 /* LeetCode :- 1631 https://leetcode.com/problems/path-with-minimum-effort/ */
 
+/* Refer the DSA notes 
+/* 
+  * Final Time Complexity Analysis
+  * Each of the O(n×m) cells can be processed once.
+  * Each processing step performs at most 4 insertions into the heap.
+  * Each insertion or deletion in the priority queue takes O(log(n×m)).
+  * Thus, the overall time complexity is: O((n×m)log(n×m))
+  */
 class iPair
     {
         int row;

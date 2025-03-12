@@ -47,6 +47,10 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 19. BFS
 20. Dijikstra ( BFS )
 21. Shortes path in Directed Graph ( Dijikstra )
+22. Shortest path in a Binary Maze ( Dijikstra )
+23. Path with minimum effort ( Dijikstra )
+24. Cheapest flights within K stops ( Dijikstra without visited array and PriorityQueue)
+25. Network Delay time ( Dijikstra )
 
 
 ----- Arrays -----

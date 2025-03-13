@@ -427,3 +427,39 @@ If the graphs have equal weights between the all the nodes then instead of Prior
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 12.3.25
+
+
+T o print the int[] in a single line 
+
+int[] arr = {1, 2, 3, 4, 5};
+System.out.println(Arrays.toString(arr));
+
+// When a problem statement asks you to return a value modulo 1000000007 (i.e., 10^9 + 7),
+// it means that the output should be the remainder when divided by 1000000007.
+
+// Why Use Modulo 1000000007?
+// 1. Prevents Overflow: Many operations can result in numbers too large to be stored in standard data types.
+// 2. Prime Number Property: 1000000007 is a prime number, making modular arithmetic properties easier to use
+//    (like modular inverse).
+
+public class ModularExponentiation {
+    public static long powerMod(long base, long exp, long mod) {
+        long result = 1;
+        while (exp > 0) {
+            if (exp % 2 == 1) {
+                result = (result * base) % mod;
+            }
+            base = (base * base) % mod;
+            exp /= 2;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        long base = 2;
+        long exp = 10;
+        int mod = 1000000007;
+
+        System.out.println(powerMod(base, exp, mod)); // Output: 1024
+    }
+}

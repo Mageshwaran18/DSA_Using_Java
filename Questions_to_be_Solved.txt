@@ -51,7 +51,7 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 23. Path with minimum effort ( Dijikstra )
 24. Cheapest flights within K stops ( Dijikstra without visited array and PriorityQueue)
 25. Network Delay time ( Dijikstra )
-
+26. Number of ways to arrive at destination ( Dijikstra )
 
 ----- Arrays -----
 

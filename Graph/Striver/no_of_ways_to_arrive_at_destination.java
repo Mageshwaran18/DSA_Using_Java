@@ -1,6 +1,12 @@
 package Graph.Striver;
 import java.util.*;
 
+/* LeetCode:- 1976 https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/ */
+
+/*
+ * Refer the DSA notes 
+ */
+
 class no_of_Ways_to_arrive_at_destination
 {
     static class iPair

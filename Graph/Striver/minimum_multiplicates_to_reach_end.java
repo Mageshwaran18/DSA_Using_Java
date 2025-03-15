@@ -1,6 +1,9 @@
 package Graph.Striver;
-
 import java.util.*;
+
+/* GFG :-  https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1 */
+
+/* Refer the DSA notes */
 
 public class minimum_multiplicates_to_reach_end {
 

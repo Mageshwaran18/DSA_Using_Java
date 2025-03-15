@@ -469,8 +469,13 @@ public class ModularExponentiation {
 
 ArrayList<Integer> neigh = Arrays.asList(arr);
 
-You're trying to assign Arrays.asList(arr) to an ArrayList<Integer>,
+You re trying to assign Arrays.asList(arr) to an ArrayList<Integer>,
 but Arrays.asList(arr) returns a List, not necessarily an ArrayList.
 
 ArrayList<Integer> neigh = new ArrayList<>(Arrays.asList(arr));
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+15.3.25
+
 

@@ -20,7 +20,13 @@ Longest Palindromic Subsequence --> LeetCode 516
 
 Longest Common Subsequence --> LeetCode 1143
 
+----- Dynamic Programming -----
 
+1. Fabinoci Series ( Tabulation + Memoization )
+2. Climbing Staircase ( Tabulation )
+3. House Robber ( Tabulation )
+4. Frog ( Tabulation )
+5. Coin Changeing ( Tabulation )
 ----- Graph Order -----
 
 DFS is like spreading of virus , untill the virus doesn't find the patient it will spread . It stops only at the end condition is met 

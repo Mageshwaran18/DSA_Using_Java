@@ -27,6 +27,8 @@ Longest Common Subsequence --> LeetCode 1143
 3. House Robber ( Tabulation )
 4. Frog ( Tabulation )
 5. Coin Changeing ( Tabulation )
+6. Unique Path ( 2D array )
+
 ----- Graph Order -----
 
 DFS is like spreading of virus , untill the virus doesn't find the patient it will spread . It stops only at the end condition is met 

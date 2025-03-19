@@ -490,4 +490,16 @@ ArrayList<Integer> neigh = new ArrayList<>(Arrays.asList(arr));
 
 18.3.25
 
+In Java, when you create an array of strings (String[]), each index is initialized to null by default.
+
+| Feature            | null                                    | "" (Empty String)                      |
+|--------------------|---------------------------------------- |----------------------------------------|
+| Definition         | Absence of a value (no memory assigned) | A valid String object with zero length |
+| Type               | null is a special literal, not an object| A String object with zero characters   |
+| Memory             | No memory allocated                     | Allocates memory for an empty string   |
+| Length (.length()) | Throws NullPointerException             | Returns 0                              |
+| Comparison (equals)| null.equals("") → ❌ Error              | "".equals("") → ✅ true               |
+| Comparison (==)    | null == "" → ❌ false                   | "" == "" → ✅ true                    |
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

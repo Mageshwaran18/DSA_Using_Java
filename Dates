@@ -503,3 +503,8 @@ In Java, when you create an array of strings (String[]), each index is initializ
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+19.3.25
+
+computeIfAbsent(key, k -> new ArrayList<>()) ensures that if key is not present in adj, it creates a new ArrayList<int[]> and adds it.
+new int[]{temp[1], temp[2]} adds an integer array representing a connection (e.g., an edge in a graph).
+Using new ArrayList<int []>() directly as an argument is wrong, as computeIfAbsent expects a function.

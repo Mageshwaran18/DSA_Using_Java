@@ -1,111 +1,103 @@
 package Graph.Striver;
 import java.util.*;
+
+/* GFG :- https://www.geeksforgeeks.org/problems/alien-dictionary/1 */
+/* Refer the DSA notes */
+
 public class alien_dictionary {
 
 
     public static String findOrder(String[] words) {
         
-        String ans = new String();
-        int ttv=0;
-        int in[] = new int[26];
-        Queue<Integer> q = new LinkedList<>();
-        ArrayList<Set<Integer>> adj = new ArrayList<>();
-        boolean visited[] = new boolean[26];  
-        for(int i = 0 ; i < 26 ; i++)
+        int cnt = 0 ; 
+        String ans = "";
+        Set<Character> st = new HashSet<>();
+        HashMap<Integer,ArrayList<Integer>> graph = new HashMap<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)-> a-b);
+        int [] in = new int[26];
+        
+        for(int i = 0 ; i < words.length ; i++)
         {
-            adj.add(new HashSet<>());
+            for(int j = 0 ;  j < words[i].length() ; j++)
+            {
+                st.add(words[i].charAt(j));
+            }
         }
+        
+        for(char c : st)
+        {
+            graph.put((int)c-'a',new ArrayList<>());
+        }
+        
         for(int i = 1 ; i < words.length ; i++)
         {
-            int j = 0 ;
-            boolean k = false;
+            boolean mean = false;
+            int j = 0 ; 
             String pre = words[i-1];
             String cur = words[i];
-            while(j<pre.length() && j < cur.length())
+            while(j<pre.length() && j <cur.length())
             {
-                
-                int pc = pre.charAt(j)-97;
-                int cc = cur.charAt(j)-97;
-                visited[pc]=true;
-                visited[cc]=true;
                 if(pre.charAt(j)!=cur.charAt(j))
                 {
-                    k=true;
-                    adj.get(pc).add(cc);
+                    mean = true; 
+                    graph.get((int)pre.charAt(j)-'a').add((int)cur.charAt(j)-'a');
                     break;
                 }
                 j++;
             }
-            if(j<words[i-1].length() && j==words[i].length() && k==false) return "";
             
+            if(j<pre.length() && j==cur.length() && mean==false) return "";
         }
-        for(int i = 0 ; i < 26;i++)
+        
+        Arrays.fill(in,-1);
+        
+        for(int i : graph.keySet())
         {
-            if(visited[i])
+            if(in[i]==-1)
             {
-                System.out.print("[");
-                for(int j : adj.get(i))
+                in[i]=0;
+            }
+            for(int neigh : graph.get(i))
+            {
+                if(in[neigh]==-1)
                 {
-                    System.out.print(j + ",");
+                    in[neigh]=0;
                 }
-                System.out.print("]");
+                in[neigh]++;
             }
         }
-        System.out.println("Visited characters :- ");
+        
         for(int i = 0 ; i < 26 ; i++)
         {
-
-            if(visited[i])
+            if(in[i]==0)
             {
-                System.out.print((char)(i+97)+ " ");
+                pq.add(i);
             }
         }
-        for(int i = 0 ; i < 26 ; i++)
+        
+        while(!pq.isEmpty())
         {
-            if(visited[i])
-            {
-                ttv++;
-                for(int j : adj.get(i))
-                {
-                    in[j]++;
-                }
-            }
-        }
-
-        for(int i = 0 ; i < 26 ; i++)
-        {
-            if(visited[i])
-            {
-                if(in[i]==0)
-                {
-                    q.add(i);
-                }
-            }
-        }
-
-        int poped = 0;
-        while(!q.isEmpty())
-        {
-            int node = q.poll();
-            ans=ans+(char)(node+97);
-            poped++;
-            for(int neigh : adj.get(node))
+            int poll = pq.poll();
+            cnt++;
+            ans += (char)(poll+'a');
+            for(int neigh : graph.get(poll))
             {
                 in[neigh]--;
                 if(in[neigh]==0)
                 {
-                    q.add(neigh);
+                    pq.add(neigh);
                 }
+                
             }
         }
-        if(ttv==poped)
+        if(cnt==st.size())        
         {
-            return ans;
+            return ans;   
         }
         else
         {
             return "";
-        }      
+        }
     }
 
 

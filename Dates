@@ -508,3 +508,15 @@ In Java, when you create an array of strings (String[]), each index is initializ
 computeIfAbsent(key, k -> new ArrayList<>()) ensures that if key is not present in adj, it creates a new ArrayList<int[]> and adds it.
 new int[]{temp[1], temp[2]} adds an integer array representing a connection (e.g., an edge in a graph).
 Using new ArrayList<int []>() directly as an argument is wrong, as computeIfAbsent expects a function.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20.3.25
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+21.3.25 
+
+String[] str; // Array of strings
+str.length; // Returns the length of the String array 
+str[0].length(); // Returns the length of the first string in the string array

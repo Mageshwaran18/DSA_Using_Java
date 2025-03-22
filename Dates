@@ -520,3 +520,19 @@ Using new ArrayList<int []>() directly as an argument is wrong, as computeIfAbse
 String[] str; // Array of strings
 str.length; // Returns the length of the String array 
 str[0].length(); // Returns the length of the first string in the string array
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+x = x << 1 means shifting x one bit to the left, which is equivalent to multiplying x by 2.
+
+If x is too large, multiplying it by 2 can exceed the maximum value of a 32-bit integer (Integer.MAX_VALUE, which is 2³¹ - 1 = 2147483647).
+
+When an integer overflows in Java, it wraps around to a negative value due to two's complement representation'.
+
+Integer.MAX_VALUE = 2147483647
+
+Integer.MAX_VALUE / 2 = 1073741823
+
+Suppose x = 1073741824 (which is 2³⁰).
+
+If we do x << 1, it becomes 2³¹ = 2147483648, which exceeds Integer.MAX_VALUE and causes an overflow.

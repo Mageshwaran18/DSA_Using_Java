@@ -536,3 +536,13 @@ Integer.MAX_VALUE / 2 = 1073741823
 Suppose x = 1073741824 (which is 2³⁰).
 
 If we do x << 1, it becomes 2³¹ = 2147483648, which exceeds Integer.MAX_VALUE and causes an overflow.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The line ArrayList<Integer>[] adj = new ArrayList<>[v]; contains two errors:
+
+Error 1: Generic Array Creation
+Java doesn't allow you to create arrays of generic types with the generic parameter specified in the instantiation. 
+The error you're seeing is because you're trying to create an array of ArrayList<Integer> with the syntax new ArrayList<>[v].
+
+Error 2: Invalid Array Creation Syntax
+The syntax new ArrayList<>[v] is incorrect. When creating arrays, you need to specify the type without generics on the right side, 
+and the size goes inside the square brackets.

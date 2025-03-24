@@ -59,6 +59,9 @@
 19.1.25
 20.1.25
 '''
+
+Graph Starting -->
+
 When a method is non-static:
 
 Each object gets its own copy of instance methods and variables

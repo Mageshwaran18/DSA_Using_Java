@@ -51,17 +51,17 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 16. Cycle Detection in Undirected Graph ( BFS )
 17. TopologicalSort & Khan Algo 
 18. Course Schedule I ( Topological Sort )
-19. Course Schedule II ( Topological Sort )
-20. BFS
-21. Dijikstra ( BFS )
-22. Shortes path in Directed Graph ( Dijikstra )
-23. Shortest path in a Binary Maze ( Dijikstra )
-24. Path with minimum effort ( Dijikstra )
-25. Cheapest flights within K stops ( Dijikstra without visited array and PriorityQueue)
-26. Network Delay time ( Dijikstra )
-27. Number of ways to arrive at destination ( Dijikstra )
-28. Minimum multiplicates to reach the end ( Dijikstra )
-
+19. Course Schedule II (Topological Sort)
+20. Find Eventual Safe States (Topological Sort)
+21. Alien Dictionary (Topological Sort)
+22. Dijkstra's Algorithm (BFS)
+23. Shortest Path in Directed Graph (Dijkstra)
+24. Shortest Path in Binary Maze (Dijkstra)
+25. Path with Minimum Effort (Dijkstra)
+26. Cheapest Flights within K Stops (Dijkstra without visited array and PriorityQueue)
+27. Network Delay Time (Dijkstra)
+28. Number of Ways to Arrive at Destination (Dijkstra)
+29. Minimum Multiplications to Reach End (Dijkstra)
 
 ----- Arrays -----
 

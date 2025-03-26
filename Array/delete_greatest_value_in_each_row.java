@@ -1,6 +1,5 @@
 package Array;
 
-import java.util.Arrays;
 
 /* LeetCode :- 2500 https://leetcode.com/problems/delete-greatest-value-in-each-row/ */
 
@@ -9,7 +8,7 @@ import Sorting.quick_sort;
 
 public class delete_greatest_value_in_each_row {
 
-    public static int delete_greatest_value_in_each_row(int[][] grid) {
+    public static int delete_Greatest_Value_in_Each_Row(int[][] grid) {
 
         for(int i = 0 ; i < grid.length ; i++)
         {
@@ -35,7 +34,7 @@ public class delete_greatest_value_in_each_row {
     
     public static void main(String[] args) {
         int[][] grid = {{1,2,4},{3,3,1}};
-        int result = delete_greatest_value_in_each_row(grid);
+        int result = delete_Greatest_Value_in_Each_Row(grid);
         System.out.println("Maximum value sum: " + result);
     }
 }

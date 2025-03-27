@@ -4,7 +4,7 @@ public class graph_creation {
 
     public static void graph_creation(int [][]graphs,int v , int e)
     {
-        @SuppressWarnings("unchecked")
+        // @SuppressWarnings("unchecked")
         ArrayList<Integer>[] adj = new ArrayList[v];
         for(int i = 0 ; i < v ; i++)
         {

@@ -1,0 +1,18 @@
+{
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.parameterHints.enabled": false,
+    "editor.inlineSuggestions.enabled": false,
+    "editor.hover.enabled": false,
+    "editor.suggest.showInlineDetails": false,
+    "editor.suggest.preview": false,
+    "editor.inlineSuggest.edits.experimental.enabled": false,
+    "editor.inlineSuggest.enabled": false,
+    "java.debug.settings.console": "integratedTerminal",
+    "java.debug.settings.onBuildFailureProceed": true,
+}

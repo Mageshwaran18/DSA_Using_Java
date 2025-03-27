@@ -549,3 +549,6 @@ The error you're seeing is because you're trying to create an array of ArrayList
 Error 2: Invalid Array Creation Syntax
 The syntax new ArrayList<>[v] is incorrect. When creating arrays, you need to specify the type without generics on the right side, 
 and the size goes inside the square brackets.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+27.3.25 

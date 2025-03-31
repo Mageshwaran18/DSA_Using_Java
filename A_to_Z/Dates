@@ -565,4 +565,10 @@ Use pq.poll() to remove and return the smallest element.
 If removing a specific element, use pq.remove(Integer.valueOf(i)). --> used to remove a particular value from the queue.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+30.3.25
 
+The time complexity for pushing element into the heap is O(log n) where n is the number of elements in the heap. 
+This is because when we insert an element, we need to maintain the heap property by comparing and potentially swapping the element with its parent nodes up the tree.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+31.3.25

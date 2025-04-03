@@ -29,6 +29,11 @@ public class best_time_to_buy_and_sell_stocks {
         }
         return ans;
     }
-    
+
+    public static void main(String[] args) {
+        best_time_to_buy_and_sell_stocks solution = new best_time_to_buy_and_sell_stocks();
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println("Maximum profit: " + solution.maxProfit(prices));
+    }    
 
 }

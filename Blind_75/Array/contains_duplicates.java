@@ -41,6 +41,11 @@ import java.util.HashSet;
         }
     }
 
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 1};
+        boolean result = containsDuplicate(nums);
+        System.out.println("Contains duplicates: " + result);
+    }
 
     
 }

@@ -1,5 +1,7 @@
 package Blind_75.Array;
 
+/* LeetCode :- 152 https://leetcode.com/problems/maximum-product-subarray/description/ */
+
 public class maximum_product_subarray {
 
     public static int maxProduct(int[] nums) {

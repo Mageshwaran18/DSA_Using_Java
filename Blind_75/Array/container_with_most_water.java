@@ -1,5 +1,3 @@
-package Blind_75.Array;
-
 /* LeetCode :- 11 https://leetcode.com/problems/container-with-most-water/*/
 
 /* Brute force :- * find all the possible rectangel and find the maximum area 

@@ -1,4 +1,3 @@
-package Blind_75.Array;
 import java.util.*;
 
 /* LeetCode :- 121 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ */

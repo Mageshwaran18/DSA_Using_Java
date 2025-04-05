@@ -1,4 +1,4 @@
-package Blind_75.Array;
+import java.util.*;
 
 /* LeetCode :- 152 https://leetcode.com/problems/maximum-product-subarray/description/ */
 

@@ -1,5 +1,3 @@
-package Blind_75.Array;
-
 import java.util.HashSet;
 
 /* LeetCode :- 217 https://leetcode.com/problems/contains-duplicate/description/ */

@@ -1,4 +1,4 @@
-package Blind_75.Array;
+import java.util.*;
 
 /* LeetCode :- 53 https://leetcode.com/problems/maximum-subarray/description/ */
 /* Hint :- Once we get the negative sum ,

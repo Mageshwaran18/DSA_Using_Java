@@ -2,6 +2,16 @@ package Blind_75.Array;
 
 /* LeetCode :- 152 https://leetcode.com/problems/maximum-product-subarray/description/ */
 
+/* Refer DSA note for better understanding   
+ * 
+ * Brute force Approach -> Create all possible subarrays using three for loops. And find the maximum product among them.
+ *                      -> T.C :- O(n^3)
+ * Better Approach -> Create all the possible subarrays using two for loops. And find the maximum product among them.
+ *                      -> T.C :- O(n^2)
+ * Optimal Approach -> Have an intuition on when we will get maximum, what could be the approach
+ *                  -> It's combination of Sliding window + prefix & suffix
+ *                  -> T.C :- O(n)
+*/
 public class maximum_product_subarray {
 
     public static int maxProduct(int[] nums) {

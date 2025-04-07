@@ -583,12 +583,15 @@ This is because when we insert an element, we need to maintain the heap property
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 5.4.25
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+6.4.25
 The correct syntax for inserting an element at a particular index in a Java ArrayList is:
 
 arr.add(index, element); --> adds the element in the particular position , but doesn't replace the element'.
 
 arr.set(index,element); --> modify the exisiting the element with the new element in the given position. Replaces the element.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7.4.25
+
 
 
 

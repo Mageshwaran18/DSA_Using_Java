@@ -42,11 +42,6 @@ class find_minimum_rotated_sorted_array
             }
         }
         return ans;
-
-        /* Striver used to say this :- 
-         *   If that is the case we can directly return the nums[low]
-            but that will not work for [3,1,2] testcase 
-         */
     }
 
     public static void main(String[] args) {

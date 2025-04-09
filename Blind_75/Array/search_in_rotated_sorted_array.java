@@ -2,6 +2,14 @@ import java.util.*;
 
 /* LeetCode :- 33 https://leetcode.com/problems/search-in-rotated-sorted-array/description/ */
 
+/* Brute force :- --> Search an element using a single for loop
+ *                --> T.C :- O( n )
+ * 
+ * Optimal approach :- --> It's similar to the find the minimum in rotated sorted array.
+ *                     --> T.C :- O( log n )
+ *                     --> Refer the DSA notes.
+  */
+
 class search_in_rotated_sorted_array{
     
     public static int search(int[] arr, int target) {

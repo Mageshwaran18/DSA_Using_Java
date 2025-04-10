@@ -13,6 +13,12 @@ public class ThreeSum {
     
     public static List<List<Integer>> ThreeSum_My_Approach(int []nums)
     {
+
+        /* 
+         * T.C :- --> O( n log n ) [ for sorting ] + O( n * n )[ for each element (n) we will be performing two pointers (n) ] = 
+         *        --> O(n log n * n^2 )
+         * S.C :- --> O(k)  k = number of unique triplets summing to 0. [ for the hashset ]
+         */
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
         Set<List<Integer>> set = new HashSet<>();
@@ -62,6 +68,12 @@ public class ThreeSum {
 
     public static List<List<Integer>> strivers_approach(int []nums)
     {
+        /* 
+         * T.C :- --> O( n log n )[ for sorting ] +  O( n * n ) [ for every element (n) we will performing the two pointers ( n )]
+         * 
+         * S.C :- --> O( 1 ) [ No extra hashset are used ].
+         */
+
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
         for(int i = 0 ; i < nums.length ; i++)

@@ -604,3 +604,46 @@ int[] arr = {1, 2, 3, 4, 5};
 System.out.println(Arrays.toString(arr));
 
 
+List<Integer> list = Arrays.asList(1, 2, 3);
+
+// This works
+System.out.println(list);  // [1, 2, 3]
+list.set(0, 10);           // Modify an element
+System.out.println(list);  // [10, 2, 3]
+
+// These will throw UnsupportedOperationException
+// list.add(4);           // Cannot add elements
+// list.remove(0);        // Cannot remove elements
+
+
+List<Integer> modifiableList = new ArrayList<>(Arrays.asList(1, 2, 3));
+modifiableList.add(4);     // Now this works
+modifiableList.remove(0);  // And this too
+-------------------------------------------------------------------------------------------------------------------------------------
+11.4.25
+
+The startsWith() method in Java is used to check if a String begins with a specified prefix. 
+It returns true if the string starts with the given prefix, and false otherwise.
+
+There are two variants of startsWith():
+1. startsWith(String prefix)
+2. startsWith(String prefix, int offset)
+
+Example:
+
+String str = "Hello World";
+System.out.println(str.startsWith("Hello"));     // true
+System.out.println(str.startsWith("World"));     // false
+System.out.println(str.startsWith("World", 6));  // true (checks from index 6)
+System.out.println(str.startsWith(""));          // true (empty string is always a prefix)
+
+// Case sensitive
+System.out.println(str.startsWith("hello"));     // false (because 'h' is lowercase)
+
+// Common use in if conditions
+if(str.startsWith("Hello")) {
+    System.out.println("String starts with Hello");
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

@@ -29,12 +29,7 @@ public class longest_word_in_dict {
         }
 
         public void dfs(Trie trie)
-        {
-            if(trie==null)
-            {
-                return;
-            }
-            
+        {            
             if(trie.word!=null)
             {
                     

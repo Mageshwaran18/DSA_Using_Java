@@ -645,5 +645,14 @@ if(str.startsWith("Hello")) {
     System.out.println("String starts with Hello");
 }
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12.4.25
+
+String str = "MaGesHwARAn";
+
+// Convert to uppercase
+System.out.println(str.toUpperCase());  // MAGESHWARAN
+
+// Convert to lowercase
+System.out.println(str.toLowerCase());  // mageshwaran
 
 

@@ -20,6 +20,14 @@ Longest Palindromic Subsequence --> LeetCode 516
 
 Longest Common Subsequence --> LeetCode 1143
 
+----- Trie -----
+
+1. Insertion , Search , Prefix find , Delete 
+2. Longest Word in Dict 
+3. Word Break 
+4. Count Distinct Substrings 
+
+
 ----- Dynamic Programming -----
 
 1. Fabinoci Series ( Tabulation + Memoization )

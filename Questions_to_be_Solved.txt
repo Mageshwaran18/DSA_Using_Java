@@ -1,6 +1,6 @@
 Trie :- 
 
-Number of distinct substrings in a string --> A2Z
+Number of distinct substrings in a string --> A2Z [ Done ]
 
 Power Sets --> Print all subsets and subsequences Strivers sheet 
 

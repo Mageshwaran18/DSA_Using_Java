@@ -1,5 +1,5 @@
-package Two_Pointers;
-import java.util.Arrays;
+package SlidingWindow_and_TwoPointers;
+import java.util.*;
 
 
 public class two_sum {

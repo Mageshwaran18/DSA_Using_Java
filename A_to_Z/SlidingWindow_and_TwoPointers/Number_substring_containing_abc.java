@@ -1,5 +1,4 @@
-
-package Sliding_Window;
+package SlidingWindow_and_TwoPointers;
 
 public class Number_substring_containing_abc {
     

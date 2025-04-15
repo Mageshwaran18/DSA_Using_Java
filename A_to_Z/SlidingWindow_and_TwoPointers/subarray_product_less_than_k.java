@@ -1,4 +1,4 @@
-package Sliding_Window;
+package SlidingWindow_and_TwoPointers;
 
 /* LeetCode :- 713 https://leetcode.com/problems/subarray-product-less-than-k/description/ */
 

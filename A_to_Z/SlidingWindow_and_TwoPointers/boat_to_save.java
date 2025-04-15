@@ -1,4 +1,4 @@
-package Two_Pointers;
+package SlidingWindow_and_TwoPointers;
 
 /* LeetCode :- 881 https://leetcode.com/problems/boats-to-save-people/ */
 

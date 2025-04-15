@@ -1,4 +1,4 @@
-package Sliding_Window;
+package SlidingWindow_and_TwoPointers;
 
 class max_sum_subarray_size_k
 {

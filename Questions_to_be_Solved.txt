@@ -4,7 +4,7 @@ Number of distinct substrings in a string --> A2Z [ Done ]
 
 Power Sets --> Print all subsets and subsequences Strivers sheet 
 
-Letter Combinations of a Phone Number --> LeetCode :- 17
+Letter Combinations of a Phone Number --> LeetCode :- 17 [ Done ]
 
 LRU Cache --> LeetCode :- 146
 

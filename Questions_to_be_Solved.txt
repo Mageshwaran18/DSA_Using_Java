@@ -51,12 +51,11 @@ Longest Common Subsequence --> LeetCode 1143
 
 ----- Sliding Windows -----
 
-1.
-2.
-3.
-4.
-5. Subarray Sum equalls K 
-6. Binary Subarray with Sum 
+1. Longest substring without repeating characters
+2. Maximum Consecutive Ones III
+3. Fruits into Basket 
+4. Subarray Sum equals K 
+5. Binary Subarray with Sum 
 
 
 ----- Trees -----

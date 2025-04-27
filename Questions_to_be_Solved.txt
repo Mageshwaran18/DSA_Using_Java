@@ -37,9 +37,37 @@ Longest Common Subsequence --> LeetCode 1143
 5. Coin Changeing ( Tabulation )
 6. Unique Path ( 2D array )
 
+
+----- Arrays -----
+
+1.Majority Elements - I
+2.Majority Elements - II
+3.Two Sum 
+4.Three Sum 
+5.Dutch National Flag Algo
+6.Kadanes Algorithm 
+7.Maximum Subarray 
+8.Maximum Score from Subarray Minimums
+
+----- Sliding Windows -----
+
+1.
+2.
+3.
+4.
+5. Subarray Sum equalls K 
+6. Binary Subarray with Sum 
+
+
+----- Trees -----
+
+1.Vertical Order traversal of a Tree
+2.Top view of a Tree
+
 ----- Graph Order -----
 
-DFS is like spreading of virus , untill the virus doesn't find the patient it will spread . It stops only at the end condition is met 
+DFS is like spreading of virus , untill the virus doesn't find the patient it will spread . 
+It stops only at the end condition is met 
 
 1. Graph Creation 
 2. BFS , DFS 
@@ -70,20 +98,4 @@ DFS is like spreading of virus , untill the virus doesn't find the patient it wi
 27. Network Delay Time (Dijkstra)
 28. Number of Ways to Arrive at Destination (Dijkstra)
 29. Minimum Multiplications to Reach End (Dijkstra)
-
------ Arrays -----
-
-1.Majority Elements - I
-2.Majority Elements - II
-3.Two Sum 
-4.Three Sum 
-5.Dutch National Flag Algo
-6.Kadanes Algorithm 
-7.Maximum Subarray 
-8.Maximum Score from Subarray Minimums
-
------ Trees -----
-
-1.Vertical Order traversal of a Tree
-2.Top view of a Tree
 

@@ -16,7 +16,20 @@ import java.util.HashMap;
  *                  If any above condition fails then shrikage the window till the condition is statisfied.
  *                  To find condition 1 Use hashmap (maxi)
 *                   To find condition 2 Use window + two pointers -> The number of different elements can be Total elements (r-l+1) in the window  - maximum occurence element
- *                  Alwas update the res with the length of the window 
+ *                  Always update the res with the length of the window 
+ *                  
+ *                  T.C :- O( 2n ) --> at worst case.
+ *                  S.C :- O( 26 )
+ * 
+ * Optimal Approach --> We are going to optimize the time complexity from 2n to n , and how we can do this ?
+ *                  --> If you have solved maximum consecutive ones , you will understand this approach 
+ *                  --> The same logic is used here ,"why we want to reduce the window size , when we know the local optilam window size "
+ *                  --> If the previous valid window size is 5 then why should i want to reduce to 4 or 3 and check increase from there ?
+ *                  --> So better keep the window size as same or shift the window with the same size over the other subarrays.
+ * 
+ *                  T.C :- O ( N ) 
+ *                  S.C :- O ( 26 )
+ * 
  */
 
 public class longest_repeating_character_replacement {

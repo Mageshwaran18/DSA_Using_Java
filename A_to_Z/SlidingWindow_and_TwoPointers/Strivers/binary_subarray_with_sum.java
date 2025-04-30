@@ -18,9 +18,7 @@ import java.util.*;
  *                     --> So we can reduce the space complexity from O( N ) to O ( N )
  *                     --> Refer DSA Note - 2
  *                     --> T.C :- O ( 2 * 2N )
- *                     --> S.C :- O ( 1 )
- *      
- *                  
+ *                     --> S.C :- O ( 1 )              
  */
 
 public class binary_subarray_with_sum {

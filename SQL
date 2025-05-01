@@ -1,0 +1,11 @@
+/*
+Query to find distinct city names from the STATION table where:
+- The first character is a vowel (a, e, i, o, or u) and 
+- The last character is also a vowel (a, e, i, o, or u)
+Case insensitive comparison is used via LOWER function
+*/
+SELECT DISTINCT ST.CITY 
+FROM STATION ST 
+WHERE LOWER(SUBSTR(CITY,1,1)) IN ('a','e','i','o','u') AND
+LOWER(SUBSTR(CITY,LENGTH(CITY),LENGTH(CITY))) IN ('a','e','i','o','u');
+

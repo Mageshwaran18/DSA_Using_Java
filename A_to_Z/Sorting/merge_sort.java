@@ -1,8 +1,11 @@
 package Sorting;
 
 /*
-* Merge Sort is a divide and conquers algorithm, it divides the given array into equal parts and then merges the 2 sorted parts. 
- * Time Complexity --> O(n logn)
+ * Merge Sort is a divide and conquer algorithm that divides the given array into equal parts and then merges the 2 sorted parts. 
+ * Time Complexity: O(n logn)
+ * Space Complexity: O(n)
+ * Useful for large datasets rather than smaller ones
+ * Requires extra space for the sorting process
  */
 
 public class merge_sort {

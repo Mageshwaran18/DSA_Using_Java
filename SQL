@@ -9,3 +9,16 @@ FROM STATION ST
 WHERE LOWER(SUBSTR(CITY,1,1)) IN ('a','e','i','o','u') AND
 LOWER(SUBSTR(CITY,LENGTH(CITY),LENGTH(CITY))) IN ('a','e','i','o','u');
 
+/* 
+Refer SQL 1581 
+
+COUNT(COLUMN) --> Never count the null values 
+When ever you perform the aggregation on a specific value , then you should use GROUP BY 
+*/
+
+SELECT V.CUSTOMER_ID,COUNT(V.VISIT_ID) AS COUNT_NO_TRANS
+FROM VISITS V
+LEFT JOIN TRANSACTIONS T  ON V.VISIT_ID=T.VISIT_ID
+WHERE T.TRANSACTION_ID IS NULL
+GROUP BY V.CUSTOMER_ID
+ORDER BY COUNT_NO_TRANS DESC;

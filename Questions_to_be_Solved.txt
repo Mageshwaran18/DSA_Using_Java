@@ -40,6 +40,9 @@ Longest Common Subsequence --> LeetCode 1143
 
 ----- Arrays -----
 
+Easy :-
+    1. Check if the array is sorted and rotated [ LC ]
+    
 1.Majority Elements - I
 2.Majority Elements - II
 3.Two Sum 

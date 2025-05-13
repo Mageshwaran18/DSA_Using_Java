@@ -736,3 +736,11 @@ DATEDIFF('2004.12.31','2005.01.01') = 1
 11.5.25
 --------------------------------------------------------------------------------------------------------------------------
 12.5.25
+--------------------------------------------------------------------------------------------------------------------------
+13.5.25
+
+Division result depends on operand types, not the variable it's stored in.
+
+* Integer division discards the decimal part.
+* float / int → float with precision
+Because one operand is float, Java promotes the other to float.

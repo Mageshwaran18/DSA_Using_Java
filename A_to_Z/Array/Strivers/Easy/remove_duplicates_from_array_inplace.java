@@ -25,21 +25,17 @@ package Array.Strivers.Easy;
  *                  --> If arr[ui] == arr[i], then it's duplicate so move i until we find the element which is not equal to arr[ui]
  *                  --> If arr[ui] != arr[i], then it's unique element replace arr[ui+1] with the arr[i], then increment the ui
  *                  --> If the i reached the end, then position at ui + 1 is the number of unique elements (ui+1 ? zero based indexing)
- *                          
+ *                  --> T.C :- O( N )
+ *                  --> S.C :- O( 1 )
  */         
 public class remove_duplicates_from_array_inplace {
     
     public static int remove_duplicates_from_array_inplace(int[] arr) {
+
         if (arr == null || arr.length == 0) {
             return 0;
         }
         
-        // int uniqueIndex = 1;
-        // for (int i = 1; i < arr.length; i++) {
-        //     if (arr[i] != arr[i - 1]) {
-        //         arr[uniqueIndex] = arr[i];
-        //         uniqueIndex++;
-        //     }
 
         int ui = 0;
         for(int j = 1 ; j < arr.length ; j++)

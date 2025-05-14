@@ -42,6 +42,7 @@ Longest Common Subsequence --> LeetCode 1143
 
 Easy :-
     1. Check if the array is sorted and rotated [ LC ]
+    2. Remove duplicates from array inplace [ LC ]
     
 1.Majority Elements - I
 2.Majority Elements - II

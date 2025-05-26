@@ -60,6 +60,7 @@ Easy :-
 3. Fruits into Basket 
 4. Subarray Sum equals K 
 5. Binary Subarray with Sum 
+6. Maximum Point you can obtain from cards 
 
 
 ----- Trees -----

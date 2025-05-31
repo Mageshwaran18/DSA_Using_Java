@@ -60,8 +60,13 @@ Easy :-
 3. Fruits into Basket 
 4. Subarray Sum equals K 
 5. Binary Subarray with Sum 
+<<<<<<< HEAD
 6. Maximum Point you can obtain from cards
 
+=======
+6. Maximum Point you can obtain from cards 
+7. Longest Substring with K Uniques [ GFG ]
+>>>>>>> 4cd17aa (31.5.25)
 
 
 ----- Trees -----

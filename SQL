@@ -76,3 +76,23 @@ CROSS JOIN Subjects Sub
 LEFT JOIN Examinations E on S.student_id=E.student_id AND Sub.subject_name=E.subject_name
 GROUP BY S.student_id,S.Student_name,Sub.subject_name
 ORDER BY S.student_id,Sub.subject_name;
+
+-- SQL LeetCode 570 [ Managers with at Least 5 Direct Reports ]
+
+-- Using SubQuery 
+
+SELECT E.name 
+FROM Employee E
+WHERE E.id in (SELECT E.ManagerId
+FROM Employee E
+WHERE E.ManagerId IS NOT NULL 
+GROUP BY E.ManagerId
+HAVING Count(E.ManagerId) >= 5);
+
+-- Using Self Joins 
+
+SELECT E2.name
+FROM Employee E1
+JOIN Employee E2 ON E1.managerId=E2.id
+GROUP BY E2.id
+HAVING COUNT(E1.managerId) >= 5;

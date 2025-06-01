@@ -771,5 +771,21 @@ GROUP BY can be applied to the set of columns too
 --------------------------------------------------------------------------------------------------------------------------
 1.6.25
 
+WITH Confirmation_Table AS(SELECT S.user_id,COUNT(C.user_id) AS "Total_Request",
+SUM(
+    CASE C.action
+    WHEN "confirmed" Then 1 
+    ELSE 0
+    END
+) AS "Total_Confirmed"
+FROM Signups S
+LEFT JOIN Confirmations C ON S.user_id=C.user_id
+GROUP BY S.user_id)
+
+SELECT CT.user_id , IFNULL(ROUND(CT.Total_Confirmed/CT.Total_Request , 2),0) AS "confirmation_rate"
+FROM  Confirmation_Table CT;
+
+
+
 
 

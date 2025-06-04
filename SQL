@@ -112,3 +112,28 @@ GROUP BY S.user_id)
 
 SELECT CT.user_id , IFNULL(ROUND(CT.Total_Confirmed/CT.Total_Request , 2),0) AS "confirmation_rate"
 FROM  Confirmation_Table CT;
+
+-- SQL LeetCode 1251 [ Average Selling Price ]
+
+SELECT P.product_id,IFNULL(ROUND(SUM((P.price*U.units))/SUM(U.units),2),0) AS "average_price"
+FROM Prices P 
+LEFT JOIN UnitsSold U ON P.product_id=U.product_id AND U.purchase_date BETWEEN P.start_date AND P.end_date
+GROUP BY P.product_id;
+
+-- SQL LeetCode 1075 [ Project Employees I ]
+
+SELECT P.project_id,ROUND(AVG(E.experience_years),2) AS "average_years" 
+FROM Project P 
+JOIN Employee E ON P.employee_id = E.employee_id
+GROUP BY P.project_id;
+
+-- SQL LeetCode 1633 [ Percentage of Users Attended a Contest ]
+
+SELECT R.contest_id ,ROUND(COUNT(R.user_id) / (
+    SELECT COUNT(U.user_id) 
+    FROM Users U
+    )*100, 2)AS percentage
+FROM Register R
+GROUP BY R.contest_id
+ORDER BY percentage DESC , R.contest_id ASC ;
+

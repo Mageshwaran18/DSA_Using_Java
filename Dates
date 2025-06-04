@@ -785,6 +785,8 @@ GROUP BY S.user_id)
 SELECT CT.user_id , IFNULL(ROUND(CT.Total_Confirmed/CT.Total_Request , 2),0) AS "confirmation_rate"
 FROM  Confirmation_Table CT;
 
+--------------------------------------------------------------------------------------------------------------------------
+4.6.25
 
 
 

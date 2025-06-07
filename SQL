@@ -137,3 +137,22 @@ FROM Register R
 GROUP BY R.contest_id
 ORDER BY percentage DESC , R.contest_id ASC ;
 
+-- SQL LeetCode 1211  [ Queries Quality and Percentage ] 
+
+SELECT Q.query_name , ROUND(AVG(Q.rating/Q.position),2) AS "quality",
+    ROUND
+    (
+        SUM(
+        CASE 
+        WHEN Q.rating < 3 THEN 1
+        ELSE 0
+        END
+        ) / COUNT(Q.query_name)*100
+    ,2) AS "poor_query_percentage"
+FROM QUERIES Q
+GROUP BY Q.query_name;
+
+
+
+
+

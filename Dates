@@ -796,8 +796,20 @@ System.out.println(Arrays.toString());
 7.6.25
 --------------------------------------------------------------------------------------------------------------------------
 8.6.25
+// Example of array cloning in Java
+int[] originalArray = {1, 2, 3, 4, 5};
+int[] clonedArray = originalArray.clone();
 
+// Now clonedArray is a copy of originalArray
+// originalArray -> [1, 2, 3, 4, 5]
+// clonedArray   -> [1, 2, 3, 4, 5]
 
+// Changes to clonedArray won't affect originalArray
+clonedArray[0] = 10;
+// originalArray -> [1, 2, 3, 4, 5]
+// clonedArray   -> [10, 2, 3, 4, 5]
+--------------------------------------------------------------------------------------------------------------------------
+9.6.25
 
 
 

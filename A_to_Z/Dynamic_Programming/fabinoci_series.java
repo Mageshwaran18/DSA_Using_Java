@@ -1,7 +1,8 @@
 package Dynamic_Programming;
 import java.util.*;
 public class fabinoci_series {
-    public static int fabinoci_series(int n)
+
+    public static int fabinoci_series_recursion(int n)
     {
         if(n<=1)
         {
@@ -12,7 +13,7 @@ public class fabinoci_series {
             return 1;
         }
 
-        return fabinoci_series(n-1)+fabinoci_series(n-2);
+        return fabinoci_series_recursion(n-1)+fabinoci_series_recursion(n-2);
     }
 
     public static int  fabinoci_series_memoization(int n , int [] memo)
@@ -78,15 +79,19 @@ public class fabinoci_series {
     }
     
     public static void main(String[] args) {
-        int n = 17; // Example input
+
+        // Fabinoci Series :- 0    1   1    2    3    5    8    13   21
+        // n_th term       :- 1st 2nd  3rd  4th  5th  6th  7th  8th  9th
+
+        int n = 50; // Example input
         int[] memo = new int[n + 1];
         int result1 = fabinoci_series_memoization(n, memo);
-        int result2 = fabinoci_series(n);
+        int result2 = fabinoci_series_recursion(n);
         int result3 = fabinoci_series_tabulation(n);
         int result4 = fabinoci_series_2_variables(n);
         System.out.println("Fibonacci number at position  " + n + " using dp ( Memoization ) : " + result1);
-        System.out.println("Fibonacci number at position  " + n + " using recursion : " + result2);
         System.out.println("Fibonacci number at position  " + n + " using dp ( Tabulation ) : " + result3);
         System.out.println("Fibonacci number at position  " + n + " using 2 variables : " + result4);
+        System.out.println("Fibonacci number at position  " + n + " using recursion : " + result2);
     }
 }

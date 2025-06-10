@@ -32,10 +32,11 @@ Longest Common Subsequence --> LeetCode 1143
 
 1. Fabinoci Series ( Tabulation + Memoization )
 2. Climbing Staircase ( Tabulation )
-3. House Robber ( Tabulation )
+3. Min Cost Climbing Stairs ( Tabulation )
 4. Frog ( Tabulation )
-5. Coin Changeing ( Tabulation )
-6. Unique Path ( 2D array )
+5. House Robber ( Tabulation )
+6. Coin Changeing ( Tabulation )
+7. Unique Path ( 2D array )
 
 
 ----- Arrays -----
@@ -60,13 +61,8 @@ Easy :-
 3. Fruits into Basket 
 4. Subarray Sum equals K 
 5. Binary Subarray with Sum 
-<<<<<<< HEAD
-6. Maximum Point you can obtain from cards
-
-=======
 6. Maximum Point you can obtain from cards 
 7. Longest Substring with K Uniques [ GFG ]
->>>>>>> 4cd17aa (31.5.25)
 
 
 ----- Trees -----

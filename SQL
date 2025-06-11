@@ -171,6 +171,21 @@ GROUP BY
     country
 ;
 
+-- SQL LeetCode 1174 [ Immediate Food Delivery II ]
+
+WITH CTE AS (
+SELECT D.delivery_id,
+ROW_NUMBER() OVER( PARTITION BY D.customer_id ORDER BY D.order_date ) AS 'nth_order_of_the_customer',
+CASE  
+WHEN D.order_date = D.customer_pref_delivery_date THEN 'immediate'
+ELSE 'schedule'
+END AS 'order'
+FROM Delivery D
+)
+
+SELECT ROUND(SUM(C.order='immediate')/COUNT(C.delivery_id)*100,2) AS 'immediate_percentage'
+FROM CTE C
+WHERE C.nth_order_of_the_customer=1;
 
 
 

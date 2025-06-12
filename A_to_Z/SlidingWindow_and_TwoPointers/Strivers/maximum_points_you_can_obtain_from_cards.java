@@ -3,7 +3,7 @@ package SlidingWindow_and_TwoPointers.Strivers;
 /* LeetCode :- 1423 https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/description/ */
 
 /* Brute Force Approach :- --> It's the best approach , just think what you want to do and what you need
- *                         --> [1,2,3,4,5,6,1] --> the possible subarrays can be 
+ *                         --> [1,2,3,4,5,6,1] --> the possible subarrays can be (if k = 4)
  *                                                 [1,2,3,4] , [1,2,3,1] , [1,2,6,1] , [1,5,6,1] , [4,5,6,1]
  *                         --> So from the above possible it's easy to find the sum with maximum.
  *                         --> Hint :- Left Side + Right Side , Start from left [ full ] and right [ empty ]

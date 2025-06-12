@@ -58,22 +58,24 @@ public class maximum_consecutive_sequence {
         {
             int n = nums.length;
             int arr[] = nums.clone();
+            int st_num = Integer.MIN_VALUE;
+            int ans = 1;
+            int i = 0;
             if(n==0)
             {
                 return 0;
             }
             Arrays.sort(arr);
-            int st_num = Integer.MIN_VALUE;
-            int ans = 1;
-            int i = 0;
-            // 0 0 1 2 3 4 5 10 6 7 8 9
             while(i < n )
             {
                 int cnt = 1;
-                while(i < n && st_num+1 == arr[i])
+                while(i < n && (st_num==arr[i] || st_num+1 == arr[i]))
                 {
-                    cnt++;
-                    st_num = arr[i];
+                    if(st_num+1 == arr[i])
+                    {
+                        cnt++;  
+                        st_num = arr[i];
+                    }
                     i++;
                 }
                 ans = Math.max(ans,cnt);
@@ -84,6 +86,31 @@ public class maximum_consecutive_sequence {
                 st_num = arr[i];
                 i++;
             }
+            return ans;   
+        }
+    }
+
+    class optimal_approach{
+        public static int optimal_approach(int []arr)
+        {
+            int ans = 1;
+            Set<Integer> st = new HashSet<>();
+            for(int i : arr)
+            {
+                st.add(i);
+            }
+
+            for(int i:st)
+            {
+                int req = i;
+                int cnt = 0;
+                while(st.contains(req-1))
+                {
+                    cnt++;
+                    req++;
+                }
+                ans = Math.max(ans,cnt);
+            }
             return ans;
         }
     }
@@ -92,9 +119,11 @@ public class maximum_consecutive_sequence {
     {
         int arr[] = {0,3,7,2,5,8,4,6,0,1};
         int bf = brute_force.brute_force(arr);
-        int bef = better_approach.better_approach(arr);
+        int ba = better_approach.better_approach(arr);
+        int oa = optimal_approach.optimal_approach(arr);
         System.out.println(bf);
-        System.out.println(bef);
+        System.out.println(ba);
+        System.out.println(oa);
     }
     
 }

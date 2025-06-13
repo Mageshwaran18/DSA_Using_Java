@@ -816,6 +816,15 @@ clonedArray[0] = 10;
 11.6.25
 --------------------------------------------------------------------------------------------------------------------------
 12.6.25
+Get the binary representation of a decimal number = Integer.toBinaryString(num)
 
+Math.pow(base,power) --> returns double value ;
+
+1 << power --> same as the above function
+
+In SQL, you cannot use column aliases or window functions directly in the `WHERE` clause 
+because they are evaluated after the `WHERE` clause during query execution.** Use a subquery or a CTE instead.
+--------------------------------------------------------------------------------------------------------------------------
+13.6.25
 
 

@@ -73,6 +73,9 @@ Medium :-
 
 1.Vertical Order traversal of a Tree
 2.Top view of a Tree
+3.Height of a Tree
+4.Depth of a Tree
+5.Diameter of a Tree
 
 ----- Graph Order -----
 

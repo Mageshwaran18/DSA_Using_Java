@@ -187,6 +187,45 @@ SELECT ROUND(SUM(C.order='immediate')/COUNT(C.delivery_id)*100,2) AS 'immediate_
 FROM CTE C
 WHERE C.nth_order_of_the_customer=1;
 
+-- SQL LeetCode 550 [ Game Play analysis IV ]
+
+-- CTE1: Get each player's first login date and the day after that
+WITH CTE1 AS (
+    SELECT 
+        A.player_id,
+        -- Get the earliest login date for each player
+        MIN(A.event_date) AS first_login_date,
+        -- Calculate the next day after the first login date
+        DATE_ADD(MIN(A.event_date), INTERVAL 1 DAY) AS next_day_of_login
+    FROM Activity A 
+    GROUP BY A.player_id
+),
+
+-- CTE2: Count how many players logged in on the day after their first login
+CTE2 AS (
+    SELECT 
+        -- Count the number of players who have a login entry exactly one day after their first login
+        COUNT(CTE1.player_id) AS consecutive_login
+    FROM CTE1
+    JOIN Activity A1 
+        ON A1.player_id = CTE1.player_id 
+       AND A1.event_date = CTE1.next_day_of_login
+),
+
+-- CTE3: Count the total number of unique players in the Activity table
+CTE3 AS (
+    SELECT 
+        COUNT(DISTINCT A2.player_id) AS total_players
+    FROM Activity A2
+)
+
+-- Final SELECT: Calculate the fraction of players who logged in the day after their first login
+SELECT 
+    ROUND(CTE2.consecutive_login / CTE3.total_players, 2) AS fraction
+FROM 
+    CTE2, CTE3;
+
+
 
 
 

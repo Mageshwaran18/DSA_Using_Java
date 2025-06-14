@@ -1,0 +1,17 @@
+Binary Search :- 
+        T.C :- O ( log n )
+        The main concept is to neglect the half of the array while searching 
+        Which part is needed to be discarded is determined using the mid 
+        Works in the sorted array always
+
+What is the difference between (high+low)/2 and [low + (high-low)/2 ] ?
+
+    consider if both the low and high are in the Integer.MAX_VALUE and Integer.MAX_VALUE ( if such long array exists )
+    then, Integer.MAX_VALUE + Integer.MAX_VALUE (high+low) will lead to overflow and high+low/2 will return a wrong index
+
+    but Integer.MAX_VALUE + (Integer.MAX_VALUE - Integer.MAX_VALUE)/2 = Integer.MAX_VALUE + 0;
+    Hence the overflow doesn't accours.
+
+Lower Bound (lb) --> Smallest index in the array such that arr[lb]>=target.
+
+Upper Bound (ub) --> Smallest index in the array such that arr[ub]>target.

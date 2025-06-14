@@ -226,6 +226,13 @@ FROM
     CTE2, CTE3;
 
 
+-- SQL LeetCode 1141  [ User Activity for the last 30 days  I ] 
+
+SELECT A.activity_date AS "day" , COUNT(DISTINCT A.user_id) AS "active_users"
+FROM Activity A
+WHERE A.activity_date BETWEEN "2019-06-28" AND "2019-07-27"
+GROUP BY A.activity_date;
+
 
 
 

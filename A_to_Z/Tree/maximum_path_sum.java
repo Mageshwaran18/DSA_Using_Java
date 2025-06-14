@@ -25,6 +25,19 @@ package Tree;
 
 public class maximum_path_sum {
 
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     
     public static int solver(TreeNode root, int[] ans) {
         if(root == null) {

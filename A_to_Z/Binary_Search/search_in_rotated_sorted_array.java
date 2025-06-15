@@ -1,3 +1,4 @@
+package Binary_Search;
 import java.util.*;
 
 /* LeetCode :- 33 https://leetcode.com/problems/search-in-rotated-sorted-array/description/ */

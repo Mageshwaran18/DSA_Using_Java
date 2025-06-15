@@ -233,6 +233,19 @@ FROM Activity A
 WHERE A.activity_date BETWEEN "2019-06-28" AND "2019-07-27"
 GROUP BY A.activity_date;
 
+--SQL LeetCode 1070 [ Product Sales Analysis III ]
+
+WITH CTE1 AS (
+    SELECT S.product_id,S.year AS 'first_year',S.quantity,S.price,
+    DENSE_RANK() OVER(PARTITION BY S.product_id ORDER BY S.year) AS "rank_of_the_year"
+    FROM Sales S
+)
+
+SELECT C1.product_id,C1.first_year,C1.quantity,C1.price
+FROM CTE1  C1
+WHERE C1.rank_of_the_year=1;
+
+
 
 
 

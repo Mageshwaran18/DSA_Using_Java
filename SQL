@@ -245,6 +245,39 @@ SELECT C1.product_id,C1.first_year,C1.quantity,C1.price
 FROM CTE1  C1
 WHERE C1.rank_of_the_year=1;
 
+--SQL LeetCode 1045 [ Customer who bought all products ]
+
+WITH CTE1 AS (
+SELECT * 
+FROM Customer C
+GROUP BY C.customer_id,C.product_key
+),
+
+CTE2 AS (
+    SELECT COUNT(DISTINCT P.product_key) AS 'count_of_products'
+    FROM Product P
+),
+
+CTE3 AS (
+    SELECT CTE1.customer_id,COUNT(CTE1.customer_id) AS 'total_buys_of_customer'
+    FROM CTE1 
+    GROUP BY CTE1.customer_id
+)
+
+SELECT CTE3.customer_id
+FROM CTE3 , CTE2
+WHERE CTE3.total_buys_of_customer=CTE2.count_of_products;
+
+'''
+--> Create a table where you avoid duplicate entries in the customer table  CTE1
+--> Find the total.no.of product 
+--> Find the no.of product each user buy from the CTE1 
+--> Return the customer id whos no.of.product equals to the total.no.of.product 
+'''
+
+
+
+
 
 
 

@@ -275,7 +275,21 @@ WHERE CTE3.total_buys_of_customer=CTE2.count_of_products;
 --> Return the customer id whos no.of.product equals to the total.no.of.product 
 '''
 
+-- SQL LeetCode 1731 [ The number of employees which report to each employee ]
 
+SELECT 
+        E1.employee_id,
+        E1.name,
+        COUNT(E2.name) AS 'reports_count',
+        ROUND(AVG(E2.age)) AS 'average_age'
+FROM 
+        Employees E1 
+JOIN    
+        Employees E2 ON E1.employee_id=E2.reports_to
+GROUP BY 
+        E1.employee_id
+ORDER BY 
+        E1.employee_id;
 
 
 

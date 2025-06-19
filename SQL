@@ -299,6 +299,44 @@ SELECT
 FROM 
     Triangle;
 
+-- SQL LeetCode 180 [ Consecutive Numbers ]
+
+WITH CTE1 AS (
+    SELECT 
+        L.num,
+        LEAD(L.num,1) OVER() AS 'next_1',
+        LEAD(L.num,2) OVER() AS 'next_2'
+    FROM 
+        Logs L
+)
+
+SELECT 
+    DISTINCT CTE1.num AS 'ConsecutiveNums'
+FROM
+    CTE1
+WHERE 
+    CTE1.num=CTE1.next_1 AND CTE1.next_1=CTE1.next_2;
+
+'''
+Understand LEAD in depth 
+LEAD(column_name, offset, default_value)
+
+| Parameter                  | Description                                                               |
+| -------------------------- | ------------------------------------------------------------------------- |
+| `column_name`              | The column to look ahead from the current row.                            |
+| `offset` (optional)        | How many rows **forward** to look. Default is `1`.                        |
+| `default_value` (optional) | Value returned if there is **no row** at the offset (e.g., end of table). |
+
+
+col1 = col2 = col3 is not executed as same as in the programing language
+it excuted in different way 
+(col1=col2)=col3
+if col1=col2 , then true will be compared to col3 which will false always
+so instead of that we want to use 
+col1 = col2 AND col2=col3 
+this will make sure your logic is working.
+'''
+
 
 
 

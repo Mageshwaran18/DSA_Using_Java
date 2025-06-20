@@ -337,6 +337,53 @@ col1 = col2 AND col2=col3
 this will make sure your logic is working.
 '''
 
+--SQL LeetCode 1164 [ Product price at given date ]
+
+-- Find the product whose change_date is lesser than the 16. 
+-- Partition them and Order them by change_date , thus recently changed before 16 would appear 1st
+-- It also includes product with change_date is 16
+-- Use rank to get those rows which are lesser ( near ) or equal to 16.
+
+WITH CTE1 AS(
+SELECT 
+    *,
+    RANK() OVER (PARTITION BY P1.product_id ORDER BY P1.change_date DESC) AS 'rank'
+FROM 
+    Products P1
+WHERE
+    P1.change_date <= '2019-08-16'
+)
+
+-- Retrive rows where the ranks is 1 
+
+SELECT 
+    CTE1.product_id,
+    CTE1.new_price AS 'price'
+FROM 
+    CTE1
+WHERE 
+    CTE1.rank=1
+
+UNION 
+
+-- Get products who's change date are after 16 and we want to set their price as 10
+
+SELECT 
+    P2.product_id,
+    10 AS 'price'
+FROM 
+    Products P2
+WHERE 
+    P2.product_id NOT IN(
+            SELECT 
+                P1.product_id
+            FROM 
+                Products P1
+            WHERE
+                P1.change_date <= '2019-08-16'
+    )
+;
+
 
 
 

@@ -384,6 +384,30 @@ WHERE
     )
 ;
 
+-- SQL LeetCode 1204 [ Last person to fit in the bus ]
+
+WITH CTE1 AS(
+    SELECT 
+        *,
+        SUM(Q.weight) OVER(ORDER BY Q.turn) AS 'cummulative_sum'
+    FROM 
+        Queue Q
+    ORDER BY 
+        Q.turn
+)
+
+SELECT 
+    CTE1.person_name
+FROM 
+    CTE1
+WHERE 
+    CTE1.cummulative_sum <=1000
+ORDER BY 
+    CTE1.cummulative_sum DESC
+LIMIT 
+    1
+;
+
 
 
 

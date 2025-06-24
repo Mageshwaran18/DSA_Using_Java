@@ -1,0 +1,54 @@
+/*
+Stack Data Structure in Java
+
+A Stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+The element that is added last will be the first one to be removed.
+
+Basic Operations:
+1. push(element) - Adds an element to the top of the stack
+2. pop() - Removes and returns the top element from the stack
+3. peek() or top() - Returns the top element without removing it
+4. isEmpty() - Returns true if stack is empty, false otherwise
+5. size() - Returns the total number of elements in the stack
+6. clear() - Removes all elements from the stack
+
+Implementation Methods:
+1. Using Array
+2. Using LinkedList
+
+Time Complexity:
+- Push operation: O(1)
+- Pop operation: O(1)
+- Peek operation: O(1)
+- Search operation: O(n)
+
+Example Usage:
+Stack<Integer> stack = new Stack<>();
+stack.push(1);    // adds 1 to stack
+stack.push(2);    // adds 2 to stack
+stack.pop();      // removes and returns 2
+stack.peek();     // returns 1 without removing
+stack.isEmpty();  // returns false
+stack.size();     // returns 1
+
+Common Applications:
+1. Function call management (Call Stack)
+2. Undo operations in text editors
+3. Expression evaluation and syntax parsing
+4. Backtracking algorithms
+5. Browser history (Back button functionality)
+
+Available Methods in Java Stack Class:
+1. empty() - Tests if stack is empty
+2. peek() - Looks at the object at the top of stack
+3. pop() - Removes the object at the top of stack
+4. push(E item) - Pushes an item onto the top of stack
+5. search(Object o) - Returns 1-based position of object
+6. size() - Returns the number of elements in stack
+
+Limitations:
+1. Fixed size in array implementation
+2. Memory overhead in linked list implementation
+3. No random access to elements
+4. Cannot access elements in middle without removing top elements
+*/

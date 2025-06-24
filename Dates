@@ -877,5 +877,18 @@ Arrays.sort()
 -------------------------------------------------------------------------------------------------------------------------
 22.6.25
 -------------------------------------------------------------------------------------------------------------------------
+23.6.25
 
+MySQL does not allow arithmetic expressions like N - 1 directly in LIMIT or OFFSET inside a stored function.
+So before doing n-1 , declare another variable and set the value of that variable as n-1 and use that variable near to the offset
+
+DECLARE count_leave INT;
+SET count_leave = N-1;
+SELECT 
+    DISTINCT E1.salary
+FROM 
+    Employee E1
+ORDER BY 
+    E1.salary DESC
+LIMIT 1 OFFSET count_leave
 

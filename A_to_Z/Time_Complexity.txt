@@ -1,0 +1,5 @@
+| **Operation** | **HashMap** | **TreeMap** | **PriorityQueue**        |
+| ------------- | ----------- | ----------- | ------------------------ |
+| **Insertion** | O(1) avg    | O(log n)    | O(log n)                 |
+| **Retrieval** | O(1) avg    | O(log n)    | ❌ O(n)\*                |
+| **Deletion**  | O(1) avg    | O(log n)    | O(log n) (for root only) |

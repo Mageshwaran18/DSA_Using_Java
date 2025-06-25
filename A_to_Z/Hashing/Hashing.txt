@@ -13,3 +13,78 @@ Array Declaration    | Maximum size (Integer type) | Maximum size (Boolean type)
 ---------------------|-----------------------------|--------------------------
 Inside main function | 10^6                        | 10^7
 Globally             | 10^7                        | 10^8
+
+
+HashMap Methods in Java:
+
+1. put(K key, V value)
+   - Inserts key-value pair into the HashMap
+   - If key already exists, updates the value
+
+2. get(Object key)
+   - Returns value associated with specified key
+   - Returns null if key not found
+
+3. remove(Object key)
+   - Removes key-value pair for specified key
+   - Returns removed value or null if key not found
+
+4. containsKey(Object key)
+   - Returns true if HashMap contains specified key
+   - Returns false otherwise
+
+5. containsValue(Object value)
+   - Returns true if HashMap contains specified value
+   - Returns false otherwise
+
+6. size()
+   - Returns number of key-value pairs in HashMap
+
+7. isEmpty()
+   - Returns true if HashMap is empty
+   - Returns false if contains elements
+
+8. clear()
+   - Removes all key-value pairs from HashMap
+
+9. keySet()
+   - Returns Set of all keys in HashMap
+
+10. values()
+    - Returns Collection of all values in HashMap
+
+11. entrySet()
+    - Returns Set of all key-value pairs (entries) in HashMap
+
+12. putAll(Map m)
+    - Copies all mappings from specified Map to HashMap
+
+13. getOrDefault(Object key, V defaultValue)
+    - Returns value for key if present
+    - Returns defaultValue if key not found
+
+14. replace(K key, V value)
+    - Replaces value for specified key if present
+    - Returns old value or null
+
+15. putIfAbsent(K key, V value)
+    - Inserts key-value pair if key not present
+    - Returns existing value if key present
+
+16. compute(K key, BiFunction<K,V,V> remappingFunction)
+    - Computes new value using given function
+    - Updates or removes if null returned
+
+17. merge(K key, V value, BiFunction<V,V,V> remappingFunction)
+    - Merges value with existing value using function
+    - Adds new entry if key not present
+
+18. equals(Object o)
+    - Compares HashMap with another object
+    - Returns true if both contain same mappings
+
+19. hashCode()
+    - Returns hash code value for HashMap
+
+20. clone()
+    - Creates shallow copy of HashMap

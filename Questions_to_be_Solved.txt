@@ -49,6 +49,10 @@ Medium :-
 
     1. Next Permutation 
     2. Length of the Longest Consecutive Sequence [ LC ]
+    3. Rotate the matrix [ N X N ] [ LC ]
+    4. Rotate the matrix [ N X M ] [ https://workat.tech/problem-solving/practice/matrix-rotation/submissions ]
+
+
 1.Majority Elements - I
 2.Majority Elements - II
 3.Two Sum 

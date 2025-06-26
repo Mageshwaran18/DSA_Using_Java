@@ -1,3 +1,6 @@
 -----String Problems-----
-1. String to Integer [ https://leetcode.com/problems/string-to-integer-atoi/description/ ]
-2. Longest Palindromic Substring [ https://leetcode.com/problems/longest-palindromic-substring/description/ ]
+
+1. Roman number to Integer [https://leetcode.com/problems/roman-to-integer/description/]
+2. String to Integer [https://leetcode.com/problems/string-to-integer-atoi/description/]
+3. Longest Palindromic Substring [https://leetcode.com/problems/longest-palindromic-substring/description/]
+4. Sum of beauty of all substrings [https://leetcode.com/problems/sum-of-beauty-of-all-substrings/description/]

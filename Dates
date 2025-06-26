@@ -900,5 +900,8 @@ All the query or select operation on sql is done only on the go and the changes 
 
 When UNION is used along with the limit and orderby it shows an error ,
 so instead the query which performs limit and order by should in the subquery format before the union operation.
+-------------------------------------------------------------------------------------------------------------------------
+26.6.25
 
+DATE_ADD('26-06-2025',INTERVAL 6 DAY) --> To add 6 days to the 26-06-2025
 

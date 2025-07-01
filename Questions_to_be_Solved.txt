@@ -20,6 +20,13 @@ Longest Palindromic Subsequence --> LeetCode 516
 
 Longest Common Subsequence --> LeetCode 1143
 
+---- Basic ----
+
+1.Create all subsequence [ Recursion ] 
+2.Create all subarrays [ N^2 ]
+3.Permutation [ ]
+
+
 ----- Trie -----
 
 1. Insertion , Search , Prefix find , Delete 

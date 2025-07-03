@@ -1,4 +1,3 @@
-package Tree.Striver;
 import java.util.*;
 
 public class tree_creation {

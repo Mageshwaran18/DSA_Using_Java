@@ -1,9 +1,5 @@
-package Tree.Striver;
-
-/* Refer DSA notes https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1 */
-
 import java.util.*;
-
+/* Refer DSA notes https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1 */
 public class top_view {
 
     static class Node{

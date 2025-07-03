@@ -3,6 +3,13 @@ package Graph.Striver;
 /* LeetCode :- 785 https://leetcode.com/problems/is-graph-bipartite/description/ */
 
 /* In a disconnected graph if one graph is not bipartite , then the entire graph will not be a bipatite  */
+/* 
+ * T.C :-   O(V + E)
+            Why?
+            Each node is visited once → O(V)
+            Each edge is visited twice (once from each endpoint) → O(E)
+ * 
+ */
 
 public class bipartite {
 

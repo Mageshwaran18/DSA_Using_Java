@@ -17,7 +17,7 @@
 4. Number of Islands [https://leetcode.com/problems/number-of-islands/] ( DFS )
 5. Number of Islands in GG [https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1] ( DFS )
 6. Flood Fill [https://leetcode.com/problems/flood-fill/submissions/] ( DFS )
-7. Bipartite Graph [https://leetcode.com/problems/is-graph-bipartite/submissions/] ( DFS )
+7. Bipartite Graph [https://leetcode.com/problems/is-graph-bipartite/submissions/] ( DFS ) [O(V+E),O(V)]
 8. Word Search ( DFS )
 9. Count the Components ( DFS )
 10. Connected Components ( DFS )

@@ -3,7 +3,11 @@
 ## Order of the Tree problems
 
 1. DFS [ Preorder , Inorder , Postorder ]
-2. BFS / Level Order [ ]
+2. BFS / Level Order [https://leetcode.com/problems/binary-tree-level-order-traversal/description/]
+3. PreOrder [https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/] (Iterative approach , Single Stack)
+4. InOrder  [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] (Iterative approach , Single Stack)
+5. PostOrder [https://leetcode.com/problems/binary-tree-postorder-traversal/description/] (Iterative approach , Single Stack)
+6. Pre,In,Post Order traveral in single shot [A_to_Z/Tree/Striver/preorder_inorder_postorder_in_single_shot.java] (Stack)
 # Binary Trees Overview
 
 This README provides an overview of binary trees, their components, and their types, based on the concepts outlined in Striver's video on Trees (YouTube Link).

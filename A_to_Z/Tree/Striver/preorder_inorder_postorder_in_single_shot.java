@@ -8,6 +8,10 @@ import java.util.*;
  *                      then add the node's value to the InOrder , add it's right to the stack if not null , increment the order.
  *              --> If order is 3 
  *                      then pop the element , add the node's value to the PostOrder.
+ * 
+ * T.C :- O ( 3N ) ~ O( N ) --> At maximum all the nodes will be operated thrice. Where N is the number of nodes in the tree.
+ * S.C :- O ( H ) --> H represent the height of the tree. At maximum the stack can hold H nodes in it. ( consider we are not considering the 3 arraylist ).
+ * 
  */
 
 class preorder_inorder_postorder_in_single_shot

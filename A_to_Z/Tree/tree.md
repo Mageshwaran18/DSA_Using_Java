@@ -2,12 +2,25 @@
 
 ## Order of the Tree problems
 
-1. DFS [ Preorder , Inorder , Postorder ]
-2. BFS / Level Order [https://leetcode.com/problems/binary-tree-level-order-traversal/description/]
-3. PreOrder [https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/] (Iterative approach , Single Stack)
-4. InOrder  [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] (Iterative approach , Single Stack)
-5. PostOrder [https://leetcode.com/problems/binary-tree-postorder-traversal/description/] (Iterative approach , Single Stack)
-6. Pre,In,Post Order traveral in single shot [A_to_Z/Tree/Striver/preorder_inorder_postorder_in_single_shot.java] (Stack)
+N -> No.of nodes in the tree.
+H -> Height of the tree.
+W -> Maximum width of the tree.
+
+1.  DFS [ Preorder , Inorder , Postorder ]
+2.  BFS / Level Order [https://leetcode.com/problems/binary-tree-level-order-traversal/description/]
+3.  PreOrder [https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/] (Iterative approach , Single Stack)
+4.  InOrder  [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] (Iterative approach , Single Stack)
+5.  PostOrder [https://leetcode.com/problems/binary-tree-postorder-traversal/description/] (Iterative approach , Single Stack)
+6.  Pre,In,Post Order traveral in single shot [A_to_Z/Tree/Striver/preorder_inorder_postorder_in_single_shot.java] (Stack) [O(3N),O(H)]
+7.  Height of a Tree recursion [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/] (Recursion) [O(N),O(H)]
+8.  Height of a Tree iterative [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/] (Stack,PreOrder/PostOrder) [O(N),O(H)]
+9.  Balanced Binary Tree [https://leetcode.com/problems/balanced-binary-tree/description/] (Height of a Tree) [O(N),O(H)]
+10. Diameter of Binary Tree [https://leetcode.com/problems/diameter-of-binary-tree/description/] (Height of a Tree) [O(N),O(H)]
+11. Binary Tree maximum path sum [https://leetcode.com/problems/binary-tree-maximum-path-sum/] (~ Height of a Tree ) [O(N),O(H)] 
+12. Same Tree [https://leetcode.com/problems/same-tree/description/] (~Recursive approach) [O(N),O(H)]
+13. Zig Zag Traversal of the Tree [https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/] (Level Order) [O(N),O(W)] 
+
+
 # Binary Trees Overview
 
 This README provides an overview of binary trees, their components, and their types, based on the concepts outlined in Striver's video on Trees (YouTube Link).

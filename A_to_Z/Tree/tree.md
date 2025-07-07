@@ -19,6 +19,10 @@ W -> Maximum width of the tree.
 11. Binary Tree maximum path sum [https://leetcode.com/problems/binary-tree-maximum-path-sum/] (~ Height of a Tree ) [O(N),O(H)] 
 12. Same Tree [https://leetcode.com/problems/same-tree/description/] (~Recursive approach) [O(N),O(H)]
 13. Zig Zag Traversal of the Tree [https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/] (Level Order) [O(N),O(W)] 
+14. Find the path from root to the leftmost and right most leaf node[A_to_Z/Tree/Striver/path_to_leftmost_leaf_node_and_path_to_rightmose_leaf_node.java] [O(H),O(H)]
+15. Boundary Traversal of a Tree [https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1] [O(N),O(N)]
+16.
+
 
 
 # Binary Trees Overview
@@ -164,9 +168,9 @@ The ancestors of a node are all the nodes along the path from the root to that n
     ```markdown
             1
           /   \
-        2     3
-        / \   / \
-      4   5 6   7
+        2       3
+        / \    / \
+      4   5   6    7
             \
             9
     ```
@@ -187,9 +191,9 @@ The ancestors of a node are all the nodes along the path from the root to that n
     ```markdown
             1
           /   \
-        2     3
-        / \   / \
-      4   5 6   7
+         2      3
+        / \    / \
+       4   5  6    7
                     \
                     10
     ```

@@ -26,7 +26,7 @@ NOTE: Space Complexity for the return type is not considered.
 12. Number of Provinces [https://leetcode.com/problems/number-of-provinces/submissions/] (DFS) [O(E+V),O(E+V)]  
 13. Surrounded Regions [https://leetcode.com/problems/surrounded-regions/description/] (DFS) [O(N*M),O(N*M)]
 14. Number of Enclaves [https://leetcode.com/problems/number-of-enclaves/description/] (DFS) [O(N*M),O(N*M)]
-15. Word Ladder - I (BFS)  
+15. Word Ladder - I [https://leetcode.com/problems/word-ladder/description/] (BFS) [O(N*L*26),O(N)]
 16. Rotten Oranges (BFS)  
 17. Cycle Detection in Undirected Graph (DFS)  
 18. Cycle Detection in Undirected Graph (BFS)  
@@ -43,3 +43,10 @@ NOTE: Space Complexity for the return type is not considered.
 29. Network Delay Time (Dijkstra)  
 30. Number of Ways to Arrive at Destination (Dijkstra)  
 31. Minimum Multiplications to Reach End (Dijkstra)  
+
+
+# Tips and Tricks 
+
+- When ever it's about finding total path / all possible path go with the DFS 
+- When ever it's about finding the minimum path go with the BFS
+- During the BFS if ( remove -> work -> add ) lead to TLE then operate work during the add itself.

@@ -148,3 +148,50 @@ The ancestors of a node are all the nodes along the path from the root to that n
 
 - **DFS** : DFS of a tree can be done by Inorder (Left,Root,Right), PreOrder , PostOrder. 
 - **BFS** : In trees BFS can be done by Level order traversal.
+
+### Leftmost Rightmost Leaf node in a tree 
+
+🍃 What is a Leftmost Leaf Node?
+
+    It is the first leaf node encountered if you traverse the tree starting from the root and always choosing the left child first, going as deep as possible.
+
+    If a node does not have a left child, you go to the right.
+
+    The goal is to go as "left" as possible until you hit a leaf.
+
+    ✅ Example Tree:
+
+    ```markdown
+            1
+          /   \
+        2     3
+        / \   / \
+      4   5 6   7
+            \
+            9
+    ```
+
+    The leftmost leaf here is: 4
+    (Because going left from root 1 to 2, then 2 to 4 leads to a leaf)
+
+- 🍃 What is a Rightmost Leaf Node?
+
+    It is the first leaf node encountered if you traverse the tree starting from the root and always choosing the right child first, going as deep as possible.
+
+    If a node does not have a right child, you go to the left.
+
+    The goal is to go as "right" as possible until you hit a leaf.
+
+    ✅ In the same tree:
+
+    ```markdown
+            1
+          /   \
+        2     3
+        / \   / \
+      4   5 6   7
+                    \
+                    10
+    ```
+    The rightmost leaf here is: 10
+    (Because we go from 1 → 3 → 7 → 10)

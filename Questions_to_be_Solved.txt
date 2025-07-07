@@ -88,38 +88,9 @@ Medium :-
 4.Depth of a Tree
 5.Diameter of a Tree
 
------ Graph Order -----
+7-7-2025
 
-DFS is like spreading of virus , untill the virus doesn't find the patient it will spread . 
-It stops only at the end condition is met 
-
-1. Graph Creation 
-2. BFS , DFS 
-3. Find all path source target ( DFS )
-4. Number of Islands ( DFS )
-5. Number of Islands in GG ( DFS )
-6. Flood Fill ( DFS )
-7. Bipartite Graph ( DFS )
-8. Word Search ( DFS )
-9. Count the Components ( DFS )
-10. Connected Components ( DFS )
-11. Number of Provinces ( DFS )
-12. Surrounded Regions ( DFS )
-13. Number of Enclaves ( DFS )
-14. Word Ladder - I ( BFS )
-15. Cycle Detection in Undirected Graph ( DFS )
-16. Cycle Detection in Undirected Graph ( BFS )
-17. TopologicalSort & Khan Algo 
-18. Course Schedule I ( Topological Sort )
-19. Course Schedule II (Topological Sort)
-20. Find Eventual Safe States (Topological Sort)
-21. Alien Dictionary (Topological Sort)
-22. Dijkstra's Algorithm (BFS)
-23. Shortest Path in Directed Graph (Dijkstra)
-24. Shortest Path in Binary Maze (Dijkstra)
-25. Path with Minimum Effort (Dijkstra)
-26. Cheapest Flights within K Stops (Dijkstra without visited array and PriorityQueue)
-27. Network Delay Time (Dijkstra)
-28. Number of Ways to Arrive at Destination (Dijkstra)
-29. Minimum Multiplications to Reach End (Dijkstra)
-
+1.Inorder 
+2.Post order traversal of a tree
+3.Boundary traversal of a tree
+4.Word Ladder I 

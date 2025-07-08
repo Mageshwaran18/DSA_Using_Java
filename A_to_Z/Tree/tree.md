@@ -21,7 +21,8 @@ W -> Maximum width of the tree.
 13. Zig Zag Traversal of the Tree [https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/] (Level Order) [O(N),O(W)] 
 14. Find the path from root to the leftmost and right most leaf node[A_to_Z/Tree/Striver/path_to_leftmost_leaf_node_and_path_to_rightmose_leaf_node.java] [O(H),O(H)]
 15. Boundary Traversal of a Tree [https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1] [O(N),O(N)]
-16.
+16. Vertical Order Traversal of a Tree [https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/] (Level Order) [O(N*logN),O(N1)]
+17. Top view of a Binary Tree [https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1] (BFS) [O(N*logN),O(N)]
 
 
 

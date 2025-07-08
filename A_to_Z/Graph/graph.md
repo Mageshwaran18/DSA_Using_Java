@@ -12,6 +12,13 @@
 Si.No, Problem Name, Link to the problem, (Approach/Method), [Time Complexity, Space Complexity]  
 NOTE: Space Complexity for the return type is not considered.
 
+Tips:- 
+| Algorithm | Undirected Graph | Directed Graph |
+| --------- | ---------------- | -------------- |
+| **BFS**   | O(V + E)         | O(V + E)       |
+| **DFS**   | O(V + E)         | O(V + E)       |
+
+
 1. Graph Creation  
 2. BFS [https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1]  
 3. DFS [https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1]  
@@ -27,9 +34,9 @@ NOTE: Space Complexity for the return type is not considered.
 13. Surrounded Regions [https://leetcode.com/problems/surrounded-regions/description/] (DFS) [O(N*M),O(N*M)]
 14. Number of Enclaves [https://leetcode.com/problems/number-of-enclaves/description/] (DFS) [O(N*M),O(N*M)]
 15. Word Ladder - I [https://leetcode.com/problems/word-ladder/description/] (BFS) [O(N*L*26),O(N)]
-16. Rotten Oranges (BFS)  
-17. Cycle Detection in Undirected Graph (DFS)  
-18. Cycle Detection in Undirected Graph (BFS)  
+16. Rotten Oranges [https://leetcode.com/problems/rotting-oranges/description/] (BFS)  [O(N*M),O(N*M)]
+17. Cycle Detection in Undirected Graph [https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1] (DFS) [O(V+E),O(V+E)]
+18. Cycle Detection in Undirected Graph [https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1] (BFS) [O(V+E),O(V+E)]
 19. Topological Sort & Kahn's Algo  
 20. Course Schedule I (Topological Sort)  
 21. Course Schedule II (Topological Sort)  

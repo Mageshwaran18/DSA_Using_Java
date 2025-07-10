@@ -23,8 +23,11 @@ W -> Maximum width of the tree.
 15. Boundary Traversal of a Tree [https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1] [O(N),O(N)]
 16. Vertical Order Traversal of a Tree [https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/] (Level Order) [O(N*logN),O(N1)]
 17. Top view of a Binary Tree [https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1] (BFS) [O(N*logN),O(N)]
-
-
+18. Bottom view of the Binary Tree [https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1] (BFS) [O(N*logN),O(N)]
+19. Right/Left side view of the Binary Tree [https://leetcode.com/problems/binary-tree-right-side-view/description/] (BFS) [O(N),O(N)]
+20. Symmetric Tree ( recusrive and interative ) [https://leetcode.com/problems/symmetric-tree/description/] (DFS/BFS) [O(N),O(H)]
+21. Root to Node path [https://www.naukri.com/code360/problems/path-in-a-tree_3843990?leftPanelTabValue=PROBLEM] (DFS) [O(N),O(N)]
+22. LCA in a Binary Tree [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/] (DFS) [O(N),O(H)]
 
 # Binary Trees Overview
 

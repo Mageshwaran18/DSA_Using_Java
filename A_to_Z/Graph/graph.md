@@ -37,11 +37,11 @@ Tips:-
 16. Rotten Oranges [https://leetcode.com/problems/rotting-oranges/description/] (BFS)  [O(N*M),O(N*M)]
 17. Cycle Detection in Undirected Graph [https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1] (DFS) [O(V+E),O(V+E)]
 18. Cycle Detection in Undirected Graph [https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1] (BFS) [O(V+E),O(V+E)]
-19. Topological Sort & Kahn's Algo  
-20. Course Schedule I (Topological Sort)  
-21. Course Schedule II (Topological Sort)  
-22. Find Eventual Safe States (Topological Sort)  
-23. Alien Dictionary (Topological Sort)  
+19. Topological Sort & Kahn's Algo [https://takeuforward.org/data-structure/kahns-algorithm-topological-sort-algorithm-bfs-g-22/] (BFS) [O(V+E),O(N)]
+20. Course Schedule I [https://leetcode.com/problems/course-schedule/description/] (Topological Sort)  [O(V+E),O(V+E)]
+21. Course Schedule II [https://leetcode.com/problems/course-schedule-ii/description/] (Topological Sort) [O(V+E),O(V+E)]
+22. Find Eventual Safe States [https://leetcode.com/problems/find-eventual-safe-states/description/] (Topological Sort/DP)  [O(V+E),O(V+E)]
+23. Alien Dictionary [https://www.geeksforgeeks.org/problems/alien-dictionary/1] (Topological Sort)  [O(L*N),O(C+E)]
 24. Dijkstra's Algorithm (BFS)  
 25. Shortest Path in Directed Graph (Dijkstra)  
 26. Shortest Path in Binary Maze (Dijkstra)  
@@ -50,6 +50,9 @@ Tips:-
 29. Network Delay Time (Dijkstra)  
 30. Number of Ways to Arrive at Destination (Dijkstra)  
 31. Minimum Multiplications to Reach End (Dijkstra)  
+32. Bellman Ford Algo 
+33. Floy Warshal Algo 
+34. Find the City With the Smallest Number of Neighbors at a Threshold Distance (Floyd-Warshall Algorithm)
 
 
 # Tips and Tricks 

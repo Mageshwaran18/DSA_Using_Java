@@ -88,9 +88,4 @@ Medium :-
 4.Depth of a Tree
 5.Diameter of a Tree
 
-7-7-2025
 
-1.Inorder 
-2.Post order traversal of a tree
-3.Boundary traversal of a tree
-4.Word Ladder I 

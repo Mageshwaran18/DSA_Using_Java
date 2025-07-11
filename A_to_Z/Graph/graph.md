@@ -42,9 +42,9 @@ Tips:-
 21. Course Schedule II [https://leetcode.com/problems/course-schedule-ii/description/] (Topological Sort) [O(V+E),O(V+E)]
 22. Find Eventual Safe States [https://leetcode.com/problems/find-eventual-safe-states/description/] (Topological Sort/DP)  [O(V+E),O(V+E)]
 23. Alien Dictionary [https://www.geeksforgeeks.org/problems/alien-dictionary/1] (Topological Sort)  [O(L*N),O(C+E)]
-24. Dijkstra's Algorithm (BFS)  
-25. Shortest Path in Directed Graph (Dijkstra)  
-26. Shortest Path in Binary Maze (Dijkstra)  
+24. Dijkstra's Algorithm  [https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1] (BFS) [O(E*log*V),O(V)]
+25. Shortest Path in Directed Graph [https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1](Dijkstra) [(E*log*V),O(V)]
+26. Shortest Path in Binary Maze [https://leetcode.com/problems/shortest-path-in-binary-matrix/description/] (Dijkstra)  [O(N^2*log*N),O(N^2)]
 27. Path with Minimum Effort (Dijkstra)  
 28. Cheapest Flights within K Stops (Dijkstra without visited array and PriorityQueue)  
 29. Network Delay Time (Dijkstra)  

@@ -28,6 +28,9 @@ W -> Maximum width of the tree.
 20. Symmetric Tree ( recusrive and interative ) [https://leetcode.com/problems/symmetric-tree/description/] (DFS/BFS) [O(N),O(H)]
 21. Root to Node path [https://www.naukri.com/code360/problems/path-in-a-tree_3843990?leftPanelTabValue=PROBLEM] (DFS) [O(N),O(N)]
 22. LCA in a Binary Tree [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/] (DFS) [O(N),O(H)]
+23. Maximum width of the Tree [https://leetcode.com/problems/maximum-width-of-binary-tree/description/] (BFS) [O(N),O(W)]
+24. Children Sum parent [https://www.geeksforgeeks.org/problems/children-sum-parent/1] (BFS) [O(N),O(N)]
+
 
 # Binary Trees Overview
 

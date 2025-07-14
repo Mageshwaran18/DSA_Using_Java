@@ -45,9 +45,9 @@ Tips:-
 24. Dijkstra's Algorithm  [https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1] (BFS) [O(E*log*V),O(V)]
 25. Shortest Path in Directed Graph [https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1](Dijkstra) [(E*log*V),O(V)]
 26. Shortest Path in Binary Maze [https://leetcode.com/problems/shortest-path-in-binary-matrix/description/] (Dijkstra)  [O(N^2*log*N),O(N^2)]
-27. Path with Minimum Effort (Dijkstra)  
+27. Path with Minimum Effort [https://leetcode.com/problems/path-with-minimum-effort/description/] (Dijkstra)  [O(n*mlog(n*m)),O(n*m)]
 28. Cheapest Flights within K Stops (Dijkstra without visited array and PriorityQueue)  
-29. Network Delay Time (Dijkstra)  
+29. Network Delay Time [https://leetcode.com/problems/network-delay-time/description/] (Dijkstra)  [O(E*logV),O(V)]
 30. Number of Ways to Arrive at Destination (Dijkstra)  
 31. Minimum Multiplications to Reach End (Dijkstra)  
 32. Bellman Ford Algo 

@@ -48,8 +48,8 @@ Tips:-
 27. Path with Minimum Effort [https://leetcode.com/problems/path-with-minimum-effort/description/] (Dijkstra)  [O(n*mlog(n*m)),O(n*m)]
 28. Cheapest Flights within K Stops (Dijkstra without visited array and PriorityQueue)  
 29. Network Delay Time [https://leetcode.com/problems/network-delay-time/description/] (Dijkstra)  [O(E*logV),O(V)]
-30. Number of Ways to Arrive at Destination (Dijkstra)  
-31. Minimum Multiplications to Reach End (Dijkstra)  
+30. Number of Ways to Arrive at Destination [https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/](Dijkstra)  [O(E*logV),O(V)]
+31. Minimum Multiplications to Reach End [https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1](Dijkstra)  [O(MOD*N*logMOD),O(MOD)]
 32. Bellman Ford Algo 
 33. Floy Warshal Algo 
 34. Find the City With the Smallest Number of Neighbors at a Threshold Distance (Floyd-Warshall Algorithm)

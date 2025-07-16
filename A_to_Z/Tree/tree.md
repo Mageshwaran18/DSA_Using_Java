@@ -30,7 +30,12 @@ W -> Maximum width of the tree.
 22. LCA in a Binary Tree [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/] (DFS) [O(N),O(H)]
 23. Maximum width of the Tree [https://leetcode.com/problems/maximum-width-of-binary-tree/description/] (BFS) [O(N),O(W)]
 24. Children Sum parent [https://www.geeksforgeeks.org/problems/children-sum-parent/1] (BFS) [O(N),O(N)]
-
+25. Print all the nodes at K distance [https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/] (BFS) [O(N),O(N)]
+26. Amount of time for Binary Tree [https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/] (BFS) [O(N),O(N)]
+27. Count Complete Tree Nodes [https://leetcode.com/problems/count-complete-tree-nodes/description/] (BFS) [O(logN)^2,O(logN)]
+28. Construct Tree using Inorder and Postorder [https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/] [O(N),O(N)]
+29. Construct Tree using Inorder and Preorder [https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/] [O(N),O(N)]
+30. Serialize and Deserialize Binary Tree [https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/] [O(N),O(N)]
 
 # Binary Trees Overview
 

@@ -36,6 +36,8 @@ W -> Maximum width of the tree.
 28. Construct Tree using Inorder and Postorder [https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/] [O(N),O(N)]
 29. Construct Tree using Inorder and Preorder [https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/] [O(N),O(N)]
 30. Serialize and Deserialize Binary Tree [https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/] [O(N),O(N)]
+31. Morris Traversal (Inorder -> PreOrder -> PostOrder) [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] [O(N),O(1)]
+32. Flatten the Binary Tree [https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/] [O(N),O(1)]
 
 # Binary Trees Overview
 

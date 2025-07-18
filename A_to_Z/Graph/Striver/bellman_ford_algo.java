@@ -26,7 +26,13 @@ class bellman_ford_algo
                 // The condition dis[par] != (int)1e8 is necessary 
                 // to ensure that we are only trying to relax edges from nodes that have already been reached.
 
-
+                // if no relaxation is given then it would look like this,
+                /*
+                   if(dis[par]+wei<dis[chi]) --> 1e8 + 10 will lead to integer overflow and that causes the false updation in the weight.
+                    {
+                        dis[chi]=dis[par]+wei;
+                    }
+                 */
                 if(dis[par]!= 1e8 && dis[par]+wei<dis[chi])
                 {
                     dis[chi]=dis[par]+wei;
@@ -39,6 +45,10 @@ class bellman_ford_algo
                 int par = temp[0];
                 int chi = temp[1];
                 int wei = temp[2];
+
+                /*
+                 * Relax edges from the node that are already reached.
+                 */
                 
                 if(dis[par]!= 1e8 && dis[par]+wei<dis[chi])
                 {

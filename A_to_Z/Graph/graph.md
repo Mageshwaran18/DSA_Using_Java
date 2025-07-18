@@ -50,9 +50,9 @@ Tips:-
 29. Network Delay Time [https://leetcode.com/problems/network-delay-time/description/] (Dijkstra)  [O(E*logV),O(V)]
 30. Number of Ways to Arrive at Destination [https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/](Dijkstra)  [O(E*logV),O(V)]
 31. Minimum Multiplications to Reach End [https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1](Dijkstra)  [O(MOD*N*logMOD),O(MOD)]
-32. Bellman Ford Algo 
-33. Floy Warshal Algo 
-34. Find the City With the Smallest Number of Neighbors at a Threshold Distance (Floyd-Warshall Algorithm)
+32. Bellman Ford Algo [https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1] [O(V*E),O(V)]
+33. Floy Warshal Algo [https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1] [O(V^3),O(V^2)]
+34. Find the City With the Smallest Number of Neighbors at a Threshold Distance [https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/] (O(N^3),O(N^2))
 
 
 # Tips and Tricks 

@@ -39,6 +39,10 @@ W -> Maximum width of the tree.
 31. Morris Traversal (Inorder -> PreOrder -> PostOrder) [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] [O(N),O(1)]
 32. Flatten the Binary Tree [https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/] [O(N),O(1)]
 
+-- Binary Search Tree --
+
+33. Find the Ceil in Binary Search Tree [https://www.geeksforgeeks.org/problems/implementing-ceil-in-bst/1] [O(logN),O(1)]
+34. Find the Floor in Binary Search Tree [https://www.geeksforgeeks.org/problems/floor-in-bst/1] [O(logN),O(1)]
 # Binary Trees Overview
 
 This README provides an overview of binary trees, their components, and their types, based on the concepts outlined in Striver's video on Trees (YouTube Link).

@@ -115,6 +115,7 @@ Tips:-
 35. Prims Algo [https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1] [O(E*logE),O(V)]
 36. Disjoint Set Union using Rank [https://www.geeksforgeeks.org/problems/disjoint-set-union-find/1] [O(alpha(N)),O(N)] -> Amortized time , alpha(N) -> ackermann function.
 37. Kruskal Algo [https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1] [O(M*alpha(M),O(M))]
+38. Number of operations to make network Connect [https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/] [O(E*alpha(N)),O(N)]
 
 
 # Tips and Tricks 

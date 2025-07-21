@@ -43,6 +43,12 @@ W -> Maximum width of the tree.
 
 33. Find the Ceil in Binary Search Tree [https://www.geeksforgeeks.org/problems/implementing-ceil-in-bst/1] [O(logN),O(1)]
 34. Find the Floor in Binary Search Tree [https://www.geeksforgeeks.org/problems/floor-in-bst/1] [O(logN),O(1)]
+35. Insertion in BST (Iterative approach) [https://leetcode.com/problems/insert-into-a-binary-search-tree/] [O(N),O(1)]
+36. Insertion in BST (Recursive approach) [https://leetcode.com/problems/insert-into-a-binary-search-tree/] [O(N),O(N)]
+37. Deletion in BST (Recursive approach) [https://leetcode.com/problems/delete-node-in-a-bst/] [O(N),O(N)]
+
+
+
 # Binary Trees Overview
 
 This README provides an overview of binary trees, their components, and their types, based on the concepts outlined in Striver's video on Trees (YouTube Link).

@@ -46,8 +46,9 @@ W -> Maximum width of the tree.
 35. Insertion in BST (Iterative approach) [https://leetcode.com/problems/insert-into-a-binary-search-tree/] [O(N),O(1)]
 36. Insertion in BST (Recursive approach) [https://leetcode.com/problems/insert-into-a-binary-search-tree/] [O(N),O(N)]
 37. Deletion in BST (Recursive approach) [https://leetcode.com/problems/delete-node-in-a-bst/] [O(N),O(N)]
-
-
+38. Find the K_th smallest in BST [https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/] [O(N),O(H)]
+39. Valid Binary Search Tree [https://leetcode.com/problems/validate-binary-search-tree/description/] [O(N),O(H)]
+40. LCA of BST [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/] [O(H),O(H)]
 
 # Binary Trees Overview
 

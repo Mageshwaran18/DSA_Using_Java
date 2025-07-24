@@ -49,7 +49,8 @@ W -> Maximum width of the tree.
 38. Find the K_th smallest in BST [https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/] [O(N),O(H)]
 39. Valid Binary Search Tree [https://leetcode.com/problems/validate-binary-search-tree/description/] [O(N),O(H)]
 40. LCA of BST [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/] [O(H),O(H)]
-
+41. Construct a Binary Search Tree using preorder [https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/] [O(N),O(H)]
+42. 
 # Binary Trees Overview
 
 This README provides an overview of binary trees, their components, and their types, based on the concepts outlined in Striver's video on Trees (YouTube Link).

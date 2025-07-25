@@ -119,6 +119,7 @@ Tips:-
 39. Most stones removed with same row and col [https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/] [O(N*alpha(N)),O(max_row+max_col)]
 40. Accounts Merge [https://leetcode.com/problems/accounts-merge/description/] [O(n + m * α(n) + m log m),O(n+m)]
 41. Number of Islands II [https://www.naukri.com/code360/problems/largest-island_840701] [O(Q*alpha(n*m),O(n*m))]
+42. Making a Large Island [https://leetcode.com/problems/making-a-large-island/] 
 
 # Tips and Tricks 
 

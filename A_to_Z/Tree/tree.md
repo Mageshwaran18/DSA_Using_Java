@@ -50,7 +50,8 @@ W -> Maximum width of the tree.
 39. Valid Binary Search Tree [https://leetcode.com/problems/validate-binary-search-tree/description/] [O(N),O(H)]
 40. LCA of BST [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/] [O(H),O(H)]
 41. Construct a Binary Search Tree using preorder [https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/] [O(N),O(H)]
-42. 
+42. Predecessor and Successor [https://www.geeksforgeeks.org/problems/predecessor-and-successor/1] [O(N),O(1)]
+43. Inorder iterator [https://leetcode.com/problems/binary-search-tree-iterator/submissions/] [O(1),O(H)]
 # Binary Trees Overview
 
 This README provides an overview of binary trees, their components, and their types, based on the concepts outlined in Striver's video on Trees (YouTube Link).

@@ -121,9 +121,10 @@ Tips:-
 
 -- Specific and Other Algo --
 
-32. Bellman Ford Algo [https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1] [O(V*E),O(V)]
-33. Floyd Warshal Algo [https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1] [O(V^3),O(V^2)]
-34. Find the City With the Smallest Number of Neighbors at a Threshold Distance [https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/] (Floyd Warshall) [O(N^3),O(N^2)]
+1. Bellman Ford Algo [https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1] [O(V*E),O(V)]
+2. Floyd Warshal Algo [https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1] [O(V^3),O(V^2)]
+3. Find the City With the Smallest Number of Neighbors at a Threshold Distance [https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/] (Floyd Warshall) [O(N^3),O(N^2)]
+4. Tarjan's Algo / Bridges in a Graph [https://leetcode.com/problems/critical-connections-in-a-network/] (Tarjan's Algo) [O(V+E),O(V+E)]
 
 # Tips and Tricks 
 

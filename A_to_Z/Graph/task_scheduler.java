@@ -64,6 +64,8 @@ class task_scheduler
         char[] tasks = {'A','A','B','B','C','D'};
         int n = 1;        
         System.out.println(task_scheduler(tasks, n));
+
+        
     }
 
 }

@@ -6,38 +6,59 @@ N -> No.of nodes in the tree.
 H -> Height of the tree.
 W -> Maximum width of the tree.
 
-1.  DFS [ Preorder , Inorder , Postorder ]
-2.  BFS / Level Order [https://leetcode.com/problems/binary-tree-level-order-traversal/description/]
-3.  PreOrder [https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/] (Iterative approach , Single Stack)
-4.  InOrder  [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] (Iterative approach , Single Stack)
-5.  PostOrder [https://leetcode.com/problems/binary-tree-postorder-traversal/description/] (Iterative approach , Single Stack)
-6.  Pre,In,Post Order traveral in single shot [A_to_Z/Tree/Striver/preorder_inorder_postorder_in_single_shot.java] (Stack) [O(3N),O(H)]
-7.  Height of a Tree recursion [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/] (Recursion) [O(N),O(H)]
-8.  Height of a Tree iterative [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/] (Stack,PreOrder/PostOrder) [O(N),O(H)]
-9.  Balanced Binary Tree [https://leetcode.com/problems/balanced-binary-tree/description/] (Height of a Tree) [O(N),O(H)]
-10. Diameter of Binary Tree [https://leetcode.com/problems/diameter-of-binary-tree/description/] (Height of a Tree) [O(N),O(H)]
-11. Binary Tree maximum path sum [https://leetcode.com/problems/binary-tree-maximum-path-sum/] (~ Height of a Tree ) [O(N),O(H)] 
-12. Same Tree [https://leetcode.com/problems/same-tree/description/] (~Recursive approach) [O(N),O(H)]
-13. Zig Zag Traversal of the Tree [https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/] (Level Order) [O(N),O(W)] 
-14. Find the path from root to the leftmost and right most leaf node[A_to_Z/Tree/Striver/path_to_leftmost_leaf_node_and_path_to_rightmose_leaf_node.java] [O(H),O(H)]
-15. Boundary Traversal of a Tree [https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1] [O(N),O(N)]
-16. Vertical Order Traversal of a Tree [https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/] (Level Order) [O(N*logN),O(N1)]
-17. Top view of a Binary Tree [https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1] (BFS) [O(N*logN),O(N)]
-18. Bottom view of the Binary Tree [https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1] (BFS) [O(N*logN),O(N)]
-19. Right/Left side view of the Binary Tree [https://leetcode.com/problems/binary-tree-right-side-view/description/] (BFS) [O(N),O(N)]
-20. Symmetric Tree ( recusrive and interative ) [https://leetcode.com/problems/symmetric-tree/description/] (DFS/BFS) [O(N),O(H)]
-21. Root to Node path [https://www.naukri.com/code360/problems/path-in-a-tree_3843990?leftPanelTabValue=PROBLEM] (DFS) [O(N),O(N)]
-22. LCA in a Binary Tree [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/] (DFS) [O(N),O(H)]
-23. Maximum width of the Tree [https://leetcode.com/problems/maximum-width-of-binary-tree/description/] (BFS) [O(N),O(W)]
-24. Children Sum parent [https://www.geeksforgeeks.org/problems/children-sum-parent/1] (BFS) [O(N),O(N)]
-25. Print all the nodes at K distance [https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/] (BFS) [O(N),O(N)]
-26. Amount of time for Binary Tree [https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/] (BFS) [O(N),O(N)]
-27. Count Complete Tree Nodes [https://leetcode.com/problems/count-complete-tree-nodes/description/] (BFS) [O(logN)^2,O(logN)]
-28. Construct Tree using Inorder and Postorder [https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/] [O(N),O(N)]
-29. Construct Tree using Inorder and Preorder [https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/] [O(N),O(N)]
-30. Serialize and Deserialize Binary Tree [https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/] [O(N),O(N)]
-31. Morris Traversal (Inorder -> PreOrder -> PostOrder) [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] [O(N),O(1)]
-32. Flatten the Binary Tree [https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/] [O(N),O(1)]
+-- Basic -- 
+
+1. DFS [ Preorder , Inorder , Postorder ]
+2. BFS / Level Order [https://leetcode.com/problems/binary-tree-level-order-traversal/description/]
+3. PreOrder [https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/] (Iterative approach, Single Stack)
+4. InOrder [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] (Iterative approach, Single Stack)
+5. PostOrder [https://leetcode.com/problems/binary-tree-postorder-traversal/description/] (Iterative approach, Single Stack)
+6. Pre,In,Post Order traversal in single shot [NULL] (Stack) [O(3N),O(H)]
+7. Same Tree [https://leetcode.com/problems/same-tree/description/] (~Recursive approach) [O(N),O(H)]
+8. Symmetric Tree (recursive and iterative) [https://leetcode.com/problems/symmetric-tree/description/] (DFS/BFS) [O(N),O(H)]
+9. Root to Node path [https://www.naukri.com/code360/problems/path-in-a-tree_3843990?leftPanelTabValue=PROBLEM] (DFS) [O(N),O(N)]
+10. Construct Tree using Inorder and Postorder [https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/] [O(N),O(N)]
+11. Construct Tree using Inorder and Preorder [https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/] [O(N),O(N)]
+
+-- Height Based --
+
+1. Height of a Tree recursion [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/] (Recursion) [O(N),O(H)]
+2. Height of a Tree iterative [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/] (Stack,PreOrder/PostOrder) [O(N),O(H)]
+3. Balanced Binary Tree [https://leetcode.com/problems/balanced-binary-tree/description/] (Height of a Tree) [O(N),O(H)]
+4. Diameter of Binary Tree [https://leetcode.com/problems/diameter-of-binary-tree/description/] (Height of a Tree) [O(N),O(H)]
+5. Binary Tree maximum path sum [https://leetcode.com/problems/binary-tree-maximum-path-sum/] (~ Height of a Tree) [O(N),O(H)] 
+
+-- BFS / Level Order --
+
+1. Zig Zag Traversal of the Tree [https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/] (Level Order) [O(N),O(W)] 
+2. Vertical Order Traversal of a Tree [https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/] (Level Order) [O(N*logN),O(N1)]
+3. Top view of a Binary Tree [https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1] (BFS) [O(N*logN),O(N)]
+4. Bottom view of the Binary Tree [https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1] (BFS) [O(N*logN),O(N)]
+5. Right/Left side view of the Binary Tree [https://leetcode.com/problems/binary-tree-right-side-view/description/] (BFS) [O(N),O(N)]
+6. Maximum width of the Tree [https://leetcode.com/problems/maximum-width-of-binary-tree/description/] (BFS+Indexing) [O(N),O(W)]
+7. Children Sum parent [https://www.geeksforgeeks.org/problems/children-sum-parent/1] (BFS) [O(N),O(N)]
+
+-- Parent Mapping --
+
+1. Print all the nodes at K distance [https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/] (BFS) [O(N),O(N)]
+2. Amount of time for Binary Tree [https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/] (BFS) [O(N),O(N)]
+
+-- Left Most and Right Most --
+
+1. Find the path from root to the leftmost and right most leaf node[NULL] [O(H),O(H)]
+2. Boundary Traversal of a Tree [https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1] [O(N),O(N)]
+
+-- Threaded Concept --
+
+1. Morris Traversal (Inorder -> PreOrder -> PostOrder) [https://leetcode.com/problems/binary-tree-inorder-traversal/description/] [O(N),O(1)]
+2. Flatten the Binary Tree [https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/] [O(N),O(1)]
+
+-- Other Important --
+
+1. LCA in a Binary Tree [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/] (DFS) [O(N),O(H)]
+2. Count Complete Tree Nodes [https://leetcode.com/problems/count-complete-tree-nodes/description/] (BFS) [O(logN)^2,O(logN)]
+3. Serialize and Deserialize Binary Tree [https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/] [O(N),O(N)]
+
 
 -- Binary Search Tree --
 
@@ -53,6 +74,9 @@ W -> Maximum width of the tree.
 42. Predecessor and Successor [https://www.geeksforgeeks.org/problems/predecessor-and-successor/1] [O(N),O(1)]
 43. Inorder iterator [https://leetcode.com/problems/binary-search-tree-iterator/submissions/] [O(1),O(H)]
 44. Two sum in BST [https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/] [O(N),O(H)]
+45. Recovery Binary Search Tree [https://leetcode.com/problems/recover-binary-search-tree/description/] [O(N),O(1)]
+
+
 # Binary Trees Overview
 
 This README provides an overview of binary trees, their components, and their types, based on the concepts outlined in Striver's video on Trees (YouTube Link).
